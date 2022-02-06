@@ -1,0 +1,22 @@
+@mixin flexBox($justify, $align, $direction){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+@mixin linkHover {
+    transition: .3s ease;
+}
+
+// Variables
+// colors
+$primary: hsl(240, 28%, 14%);
+$secondary:hsl(223, 48%, 16%);
+$hover:rgb(57, 111, 177);
+$pink:hsl(350, 79%, 59%);
+$greytext:hsl(0, 3%, 29%);
+
+// fonts
+$regular: 400;
+$sbold:600;
+$ebold:800;

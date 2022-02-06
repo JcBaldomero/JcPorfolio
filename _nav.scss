@@ -1,0 +1,85 @@
+@import "./mixins";
+
+
+nav{
+    @include flexBox(center,center,row);
+    background-color: $primary;
+    color: white;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+.logo-container{
+    flex: 1;
+    @include flexBox(flex-start,center,row);
+    img{
+        height: 4.5rem;
+        max-width: 50%;
+        margin-left: 1rem;
+    }
+    .navBtn{
+        display: none;
+
+    }
+}
+.navlink-container{
+    flex: 1;
+    @include flexBox(center,center,row);
+a{
+    margin: 0rem .5rem;
+    font-size: 1.2rem;
+    color: white;
+    @include linkHover;
+&:hover{
+    color: $hover;
+    transition:.3s ease;
+}
+i{
+    opacity: 0;
+}
+&:hover i{
+    opacity: 1;
+}
+}
+}
+
+}
+
+
+@media (min-width: 240px) and (max-width: 480px) {
+    nav{    
+        .logo-container{
+        width: 100%;
+        @include flexBox(space-between,center,row);
+        position: relative;
+    .navBtn{
+        display: flex;
+        font-size: 1.5rem;
+        margin-right: 1rem;
+    }
+}
+    .navlink-container{
+        width: 85%; height: 100vh;
+        padding: 1rem 1rem 0rem 4rem;
+        @include flexBox(flex-start,center,column);
+        position: absolute;
+        top: 0%;
+        right: 100%;
+        transition: 1s cubic-bezier(.43,.92,.41,.64);
+        background-color: white;
+        @include linkHover;
+        a{
+            margin: 1rem 0rem;
+            color: $hover;
+            i{
+                opacity: 1;
+            }
+        }
+    }
+    .navlink-container.open{
+        right: 30%;
+        box-shadow: 1px 1px 62px 1000px  rgba(26, 25, 25, 0.527), 1px 1px 2px rgba(0, 0, 0, 0.253);
+    }
+
+}
+}
