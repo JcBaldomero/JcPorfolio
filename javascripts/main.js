@@ -39,6 +39,15 @@ panels.forEach(panel => panel.addEventListener('transitionend', toggleShow));
 
 
 
+// Typewriter Function
+var typed = new Typed(".typing",{
+  strings: ["Front-end Developer","Video Editor"," Graphic Designer"],
+  typeSpeed: 120,
+  bacSpeed: 11,
+  loop: true
+ })
+
+
 
 
 
