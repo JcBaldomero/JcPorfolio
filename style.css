@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /** @format */
+/** @format */
 nav {
   display: flex;
   justify-content: center;
@@ -22,8 +23,8 @@ nav .logo-container {
 }
 
 nav .logo-container img {
-  height: 4.5rem;
-  max-width: 50%;
+  height: 5rem;
+  max-width: 100%;
   margin-left: 1rem;
 }
 
@@ -40,15 +41,15 @@ nav .navlink-container {
 }
 
 nav .navlink-container a {
-  margin: 0rem .5rem;
-  font-size: 1.2rem;
+  margin: 0rem 0.5rem;
+  font-size: 1.3rem;
   color: white;
   transition: .3s ease;
 }
 
 nav .navlink-container a:hover {
   color: #396fb1;
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
 
 nav .navlink-container a i {
@@ -72,6 +73,7 @@ nav .navlink-container a:hover i {
     display: flex;
     font-size: 1.5rem;
     margin-right: 1rem;
+    z-index: 3;
   }
   nav .navlink-container {
     width: 85%;
@@ -238,7 +240,7 @@ h2 {
 }
 
 h5 {
-  font-size: clamp(10px, 1rem, 13vw);
+  font-size: clamp(10px, 1rem, 12vw);
   font-weight: 600;
 }
 
@@ -416,10 +418,6 @@ button {
   flex-direction: column;
 }
 
-.skills-container .skill-table .row h5 {
-  font-size: clamp(5px, 1.5rem, 3vw);
-}
-
 .skills-container .skill-table .row h3 {
   color: #e9445f;
   font-weight: 400;
@@ -446,6 +444,10 @@ button {
   margin: 1.5rem 0rem;
 }
 
+.skills-container .skill-table .row ul .incomplete {
+  color: rgba(61, 59, 59, 0.486);
+}
+
 .gallery-container {
   min-height: 100vh;
   overflow: hidden;
@@ -460,7 +462,7 @@ button {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  transition: background-image 1s ease-out, flex 1s ease, color .2s ease-in-out;
+  transition: background-image 1s ease-out, flex 1s ease, color 0.2s ease-in-out;
   cursor: pointer;
   color: white;
   text-shadow: 1px 1px 2px #121213;
@@ -493,7 +495,7 @@ button {
   height: 220px;
   margin: 2rem;
   position: relative;
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
 
 .gallery-container .panel .works-container .project img {
@@ -510,7 +512,7 @@ button {
   opacity: 0;
   top: 84%;
   left: 0%;
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
 
 .gallery-container .panel:nth-child(odd) h2 {
@@ -747,7 +749,7 @@ button {
 }
 
 .contact-container .form-container .socials-container::before, .contact-container .form-container .socials-container::after {
-  content: "";
+  content: '';
   height: 100px;
   width: 1.5px;
   position: absolute;
@@ -771,8 +773,8 @@ button {
 
 .contact-container .form-container .socials-container a svg {
   width: 100%;
-  transition: .3s ease;
-  margin: .5rem 0rem;
+  transition: 0.3s ease;
+  margin: 0.5rem 0rem;
 }
 
 .contact-container .form-container .socials-container a svg:hover {

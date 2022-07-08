@@ -29,7 +29,7 @@ h2 {
 }
 // section description
 h5 {
-  font-size: clamp(10px, 1rem, 13vw);
+  font-size: clamp(10px, 1rem, 12vw);
   font-weight: $sbold;
 }
 a,
@@ -167,9 +167,7 @@ button {
     .row {
       flex: 2;
       @include flexBox(flex-start, center, column);
-      h5 {
-        font-size: clamp(5px, 1.5rem, 3vw);
-      }
+   
       h3 {
         color: $pink;
         font-weight: $regular;
@@ -189,6 +187,9 @@ button {
           font-size: 1.3rem;
           color: rgba(0, 0, 0, 0.76);
           margin: 1.5rem 0rem;
+        }
+        .incomplete{
+          color: rgba(61, 59, 59, 0.486);
         }
       }
     }

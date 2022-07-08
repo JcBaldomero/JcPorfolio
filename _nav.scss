@@ -14,7 +14,7 @@ nav {
     flex: 1;
     @include flexBox(flex-start, center, row);
     img {
-      height: 55rem;
+      height: 5rem;
       max-width: 100%;
       margin-left: 1rem;
     }
@@ -27,7 +27,7 @@ nav {
     @include flexBox(center, center, row);
     a {
       margin: 0rem 0.5rem;
-      font-size: 1.2rem;
+      font-size: 1.3rem;
       color: white;
       @include linkHover;
       &:hover {
@@ -54,6 +54,7 @@ nav {
         display: flex;
         font-size: 1.5rem;
         margin-right: 1rem;
+        z-index: 3;
       }
     }
     .navlink-container {
