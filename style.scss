@@ -24,7 +24,7 @@ main {
 h2 {
   color: $hover;
   font-weight: $ebold;
-  font-size:clamp(1rem, 4rem, 7rem);
+  font-size: clamp(1rem, 4rem, 7rem);
   margin-bottom: 1rem;
 }
 // section description
@@ -56,7 +56,7 @@ button {
       h1 {
         color: $hover;
         line-height: 1;
-        font-size:clamp(3rem, 4rem, 7vw);
+        font-size: clamp(3rem, 4rem, 7vw);
         margin: 0.5rem 0rem;
       }
       h4 {
@@ -167,7 +167,7 @@ button {
     .row {
       flex: 2;
       @include flexBox(flex-start, center, column);
-      h5{
+      h5 {
         font-size: clamp(5px, 1.5rem, 3vw);
       }
       h3 {
@@ -196,158 +196,153 @@ button {
 }
 
 // gallery-container
-.gallery-container{
+.gallery-container {
   min-height: 100vh;
   overflow: hidden;
   display: flex;
-  .panel{
+  .panel {
     border-right: 1px solid rgba(18, 18, 19, 0.349);
     flex: 1;
-    @include flexBox(center,center,column);
+    @include flexBox(center, center, column);
     text-align: center;
-    transition: background-image 1s ease-out,
-    flex 1s ease,
-    color .2s ease-in-out;
+    transition: background-image 1s ease-out, flex 1s ease,
+      color 0.2s ease-in-out;
     cursor: pointer;
     color: white;
     text-shadow: 1px 1px 2px rgb(18, 18, 19);
     position: relative;
-    h3{
+    h3 {
       font-size: 1.5rem;
     }
-  .works-container{
-    width: 100%;
-    position: absolute;
-    opacity: 0;
-    @include flexBox(center,center,row);
-    flex-wrap: wrap;
-    transition: 1s ease-in;
-    h2{
+    .works-container {
       width: 100%;
-      font-size: clamp(3rem, 4rem, 6vw);
-    }
- 
-    .project{
-      width: 350px;
-      height:220px;
-      margin: 2rem;
-      position: relative;
-      transition: .5s ease;
-      img{
+      position: absolute;
+      opacity: 0;
+      @include flexBox(center, center, row);
+      flex-wrap: wrap;
+      transition: 1s ease-in;
+      h2 {
         width: 100%;
-        height: 100%;
-        opacity: 0;
+        font-size: clamp(3rem, 4rem, 6vw);
       }
-      a{
-        position: absolute;
-        color: white;
-        background-color: rgba(255, 0, 0, 0.815);
-        padding: 0.5rem;
-        opacity: 0;
-        top: 84%;
-        left: 0%;
-        transition: .3s ease;
-      }
-  } 
-  }
-  &:nth-child(odd){
-    h2{
-      color: $pink;
-    }
-    .project{
-      a{
-        background-color: $pink;
-        &:hover{
-          background-color: $primary
+
+      .project {
+        width: 350px;
+        height: 220px;
+        margin: 2rem;
+        position: relative;
+        transition: 0.5s ease;
+        img {
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+        }
+        a {
+          position: absolute;
+          color: white;
+          background-color: rgba(255, 0, 0, 0.815);
+          padding: 0.5rem;
+          opacity: 0;
+          top: 84%;
+          left: 0%;
+          transition: 0.3s ease;
         }
       }
-  } 
-  }
-  &:nth-child(even){
-   h2{
-     color: $primary;
-   }
-   .project{
-    a{
-      background-color: $primary;
-      &:hover{
-        background-color: $pink;
+    }
+    &:nth-child(odd) {
+      h2 {
+        color: $pink;
+      }
+      .project {
+        a {
+          background-color: $pink;
+          &:hover {
+            background-color: $primary;
+          }
+        }
       }
     }
-} 
+    &:nth-child(even) {
+      h2 {
+        color: $primary;
+      }
+      .project {
+        a {
+          background-color: $primary;
+          &:hover {
+            background-color: $pink;
+          }
+        }
+      }
+    }
   }
- 
-  }
- 
 
-  .panel1{
-    background: url("./images/background/pexels-隔壁光头老王-wangming\'photo-354939.jpg")no-repeat center;
+  .panel1 {
+    background: url("./images/background/pexels-隔壁光头老王-wangming'photo-354939.jpg")
+      no-repeat center;
     background-size: cover;
   }
-  .panel2{
-    background: url('./images/background/pexels-ovan-57690.jpg')no-repeat;
+  .panel2 {
+    background: url('./images/background/pexels-ovan-57690.jpg') no-repeat;
     background-size: cover;
   }
-  .panel3{
-    background: url('./images/background/pexels-pixabay-265667.jpg')no-repeat 45%;
+  .panel3 {
+    background: url('./images/background/pexels-pixabay-265667.jpg') no-repeat
+      45%;
     background-size: cover;
   }
-  .panel4{
-    background: url('./images/background/pexels-mikechie-esparagoza-1742370.jpg')no-repeat 35%;
+  .panel4 {
+    background: url('./images/background/pexels-mikechie-esparagoza-1742370.jpg')
+      no-repeat 35%;
     background-size: cover;
   }
-  .panel.open{
+  .panel.open {
     flex: 13;
     height: 100vh;
     border: none;
     text-shadow: none;
     background-image: none;
     color: transparent;
- 
-  &:nth-child(odd){
-    background-color: $primary;
-    .works-container{
-      .project{
-       &:hover{
-        box-shadow: 2px 2px 6px $pink;
-       }
+
+    &:nth-child(odd) {
+      background-color: $primary;
+      .works-container {
+        .project {
+          &:hover {
+            box-shadow: 2px 2px 6px $pink;
+          }
+        }
+      }
+    }
+    &:nth-child(even) {
+      background-color: $pink;
+      .works-container {
+        .project {
+          &:hover {
+            box-shadow: 2px 2px 15px $primary;
+          }
+        }
+      }
+    }
+    .works-container {
+      opacity: 1;
+      .project {
+        img {
+          opacity: 1;
+        }
+        a {
+          opacity: 1;
+          font-weight: $sbold;
+        }
       }
     }
   }
-  &:nth-child(even){
-    background-color: $pink;
-    .works-container{
-      .project{
-        &:hover{
-          box-shadow: 2px 2px 15px $primary;
-         }
-      }
-    }
-  }
-  .works-container{
-    opacity: 1;
-  .project{
-    img{
-      opacity: 1;
-    }
-    a{
-      opacity: 1;
-      font-weight: $sbold;
-    }
-  }
-  }
-  }
-
-
-  
 }
-
-
 
 // Contact section
 .contact-container {
   width: 100%;
-  padding:  10rem 0rem;
+  padding: 10rem 0rem;
   @include flexBox(center, center, column);
   background-color: $primary;
   h2,
@@ -355,7 +350,7 @@ button {
     margin-left: 2rem;
     align-self: flex-start;
   }
-  h2{
+  h2 {
     font-size: clamp(2.5rem, 4rem, 5vw);
   }
   p {
@@ -397,7 +392,7 @@ button {
         background: url('./images/background/people-gc5e32ff58_1920.jpg')
           no-repeat center;
         background-size: cover;
-         background-attachment: fixed; 
+        background-attachment: fixed;
         animation: fade 15s infinite ease;
       }
       .slide2 {
@@ -476,38 +471,37 @@ button {
     .socials-container {
       width: 5%;
       margin-left: 1rem;
-      @include flexBox(center,center,column);
+      @include flexBox(center, center, column);
       position: relative;
 
-      &::before,  &::after{
-        content: "";
+      &::before,
+      &::after {
+        content: '';
         height: 100px;
         width: 1.5px;
         position: absolute;
         z-index: 2;
       }
-      &::before{
+      &::before {
         background-color: white;
         top: -50%;
         left: 50%;
-
       }
-      &::after{
+      &::after {
         background-color: white;
         top: 100%;
       }
-      a{
+      a {
         width: 50%;
-      svg{
-        width: 100%;
-        transition: .3s ease;
-        margin: .5rem 0rem;
-        &:hover{
-          width: 110%;
+        svg {
+          width: 100%;
+          transition: 0.3s ease;
+          margin: 0.5rem 0rem;
+          &:hover {
+            width: 110%;
+          }
         }
       }
-    }
-      
     }
   }
 }
@@ -518,11 +512,10 @@ footer {
   background-color: $pink;
   padding: 1rem 0rem;
   @include flexBox(center, center, row);
-  color: white; 
+  color: white;
 }
 
 @media (min-width: 240px) and (max-width: 480px) {
-
   body {
     max-width: unset;
     margin: unset;
@@ -573,48 +566,45 @@ footer {
       }
     }
   }
- 
-  
-// gallery-container
-.gallery-container{
-  min-height: 200vh;
-  flex-direction: column;
-  .panel{
-    background-image: none;
-    padding: 1rem 0rem;
-    h3{
-      display: none;
-    }
-  .works-container{
-    height: auto;
-    position: unset;
-    opacity: 1;
-    .project{
-      margin: 1rem;
-      img{
-        opacity: 1;
-      }
-      a{
-        opacity: 1;
 
+  // gallery-container
+  .gallery-container {
+    min-height: 200vh;
+    flex-direction: column;
+    .panel {
+      background-image: none;
+      padding: 1rem 0rem;
+      h3 {
+        display: none;
       }
-  } 
-  }
-  &:nth-child(odd){
-    background-color: $primary;
-    .project{
-      border: 1px solid $pink;
+      .works-container {
+        height: auto;
+        position: unset;
+        opacity: 1;
+        .project {
+          margin: 1rem;
+          img {
+            opacity: 1;
+          }
+          a {
+            opacity: 1;
+          }
+        }
+      }
+      &:nth-child(odd) {
+        background-color: $primary;
+        .project {
+          border: 1px solid $pink;
+        }
+      }
+      &:nth-child(even) {
+        background-color: $pink;
+        .project {
+          border: 1px solid $primary;
+        }
+      }
     }
   }
-  &:nth-child(even){
-    background-color: $pink;
-    .project{
-      border: 1px solid $primary;
-    }
-  }
- 
-  }
-}
 
   // Contact section
   .contact-container {
@@ -659,25 +649,24 @@ footer {
       //   }
       // }
 
-
       .socials-container {
         width: 100%;
         margin-left: 0rem;
-        @include flexBox(center,center,row);
+        @include flexBox(center, center, row);
         position: relative;
-  
-        &::before,  &::after{
+
+        &::before,
+        &::after {
           display: none;
         }
-     
-        a{
+
+        a {
           width: 10%;
           margin: 0rem 1rem;
-        svg{
-          width: 100%;
+          svg {
+            width: 100%;
+          }
         }
-      }
-        
       }
     }
   }
