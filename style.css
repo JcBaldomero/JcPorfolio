@@ -16,6 +16,7 @@ nav {
 
 nav .logo-container {
   flex: 1;
+  padding-left: 20px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -25,7 +26,6 @@ nav .logo-container {
 nav .logo-container img {
   height: 5rem;
   max-width: 100%;
-  margin-left: 1rem;
 }
 
 nav .logo-container .navBtn {
@@ -233,22 +233,14 @@ main {
 }
 
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 0px;
 }
 
-::-webkit-scrollbar-track {
-  background-color: white;
-  box-shadow: inset 1px 1px 5px black;
-  border-radius: 5px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #f84b0c;
-  border-radius: 5px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: white;
+body {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 h2 {
@@ -295,11 +287,20 @@ button {
 
 .intro-container .intro-left .intro-descript {
   text-align: left;
+  position: relative;
+}
+
+.intro-container .intro-left .intro-descript .patch {
+  position: absolute;
+  left: -1%;
+  width: 10px;
+  height: 20px;
+  background-color: white;
 }
 
 .intro-container .intro-left .intro-descript .typing {
   position: absolute;
-  top: -35%;
+  top: -40%;
   padding: .5rem 0rem;
   color: #396fb1;
   font-size: clamp(2rem, 4rem, 5vw);
@@ -410,7 +411,7 @@ button {
 }
 
 .skills-container {
-  margin: 15rem 0rem 3rem;
+  margin: 15rem 0rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -441,6 +442,7 @@ button {
   color: #e9445f;
   font-weight: 400;
   font-size: 1.7rem;
+  margin: 1rem 0rem;
 }
 
 .skills-container .skill-table .row img {
@@ -455,6 +457,7 @@ button {
 
 .skills-container .skill-table .row ul {
   text-align: left;
+  margin-top: 10px;
 }
 
 .skills-container .skill-table .row ul li {
@@ -474,7 +477,6 @@ button {
 }
 
 .gallery-container .panel {
-  border-right: 1px solid rgba(206, 12, 12, 0.349);
   flex: 2;
   display: flex;
   justify-content: center;
@@ -512,7 +514,7 @@ button {
 
 .gallery-container .panel .works-container .project {
   width: 50%;
-  max-height: 220px;
+  max-height: 250px;
   margin: 2rem 0rem;
   position: relative;
   transition: 0.5s ease;
@@ -620,18 +622,12 @@ button {
 
 .contact-container {
   width: 100%;
-  padding: 10rem 0rem;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   background-color: #1a1a2e;
-}
-
-.contact-container h2,
-.contact-container p {
-  margin-left: 2rem;
-  align-self: flex-start;
 }
 
 .contact-container h2 {
@@ -640,166 +636,11 @@ button {
 
 .contact-container p {
   color: #e9445f;
-  margin-left: 3.5rem;
-  max-width: 50ch;
 }
 
-.contact-container .form-container {
-  width: 100%;
-  max-width: 1450px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  position: relative;
-  margin-top: 7rem;
-}
-
-.contact-container .form-container .contact-form {
-  width: 90%;
-  max-width: 900px;
-  position: relative;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: row;
-}
-
-.contact-container .form-container .contact-form .slide1 {
-  background: url("./images/background/people-gc5e32ff58_1920.jpg") no-repeat center;
-  background-size: cover;
-  background-attachment: fixed;
-  animation: fade 15s infinite ease;
-}
-
-.contact-container .form-container .contact-form .slide2 {
-  background: url("./images/background/top-view-person-writing-laptop-with-copy-spaceRight.png") no-repeat center;
-  background-size: cover;
-  animation: fade2 15s infinite ease;
-}
-
-.contact-container .form-container .contact-form .slide3 {
-  background: url("./images/background/KoiGirlAnime.jpg") no-repeat center;
-  background-size: cover;
-  animation: fade3 15s infinite ease;
-}
-
-.contact-container .form-container .contact-form form {
-  width: 90%;
-  max-width: 450px;
-  padding: 2rem 0rem 2rem 4rem;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
-  position: absolute;
-  z-index: 2;
-}
-
-.contact-container .form-container .contact-form form p {
-  color: black;
-  margin: 0;
-  font-weight: 600;
-}
-
-.contact-container .form-container .contact-form form input {
-  margin: 0.4rem 0rem;
-}
-
-.contact-container .form-container .contact-form form input::placeholder {
-  color: black;
-}
-
-.contact-container .form-container .contact-form form input,
-.contact-container .form-container .contact-form form textarea,
-.contact-container .form-container .contact-form form select,
-.contact-container .form-container .contact-form form option {
-  padding: 0.3rem 0rem 0.3rem 0.3rem;
-  width: 80%;
-  font-weight: 600;
-}
-
-.contact-container .form-container .contact-form form input:focus,
-.contact-container .form-container .contact-form form textarea:focus,
-.contact-container .form-container .contact-form form select:focus,
-.contact-container .form-container .contact-form form option:focus {
-  outline-style: solid;
-  outline-width: 2px;
-  outline-color: #e9445f;
-  color: #15203c;
-}
-
-.contact-container .form-container .contact-form form .subject {
-  margin: 1rem 0rem;
-}
-
-.contact-container .form-container .contact-form form .subject label {
-  display: inline;
-}
-
-.contact-container .form-container .contact-form form .subject select {
-  max-width: 267px;
-}
-
-.contact-container .form-container .contact-form form button {
-  width: 80%;
-  padding: 0.5rem 0rem;
-  border-radius: 10px;
+.contact-container .contactLottie {
+  margin-top: 2rem;
   cursor: pointer;
-  border: none;
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: white;
-  background-color: #396fb1;
-  transition: 0.3s ease;
-}
-
-.contact-container .form-container .contact-form form button:hover {
-  background-color: #15203c;
-  color: #e9445f;
-}
-
-.contact-container .form-container .socials-container {
-  width: 5%;
-  margin-left: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position: relative;
-}
-
-.contact-container .form-container .socials-container::before, .contact-container .form-container .socials-container::after {
-  content: '';
-  height: 100px;
-  width: 1.5px;
-  position: absolute;
-  z-index: 2;
-}
-
-.contact-container .form-container .socials-container::before {
-  background-color: white;
-  top: -50%;
-  left: 50%;
-}
-
-.contact-container .form-container .socials-container::after {
-  background-color: white;
-  top: 100%;
-}
-
-.contact-container .form-container .socials-container a {
-  width: 50%;
-}
-
-.contact-container .form-container .socials-container a svg {
-  width: 100%;
-  transition: 0.3s ease;
-  margin: 0.5rem 0rem;
-}
-
-.contact-container .form-container .socials-container a svg:hover {
-  width: 110%;
 }
 
 footer {

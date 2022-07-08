@@ -12,11 +12,11 @@ nav {
   z-index: 99;
   .logo-container {
     flex: 1;
+    padding-left: 20px;
     @include flexBox(flex-start, center, row);
     img {
       height: 5rem;
       max-width: 100%;
-      margin-left: 1rem;
     }
     .navBtn {
       display: none;
