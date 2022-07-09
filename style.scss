@@ -138,6 +138,7 @@ button {
     background: url('./images/background/top-view-person-writing-laptop-with-copy-spaceLeft.png')
       no-repeat;
     position: relative;
+   
 
     .about-card,
     .show-on-scroll {
@@ -250,7 +251,7 @@ button {
 
       .project {
         width: 50%;
-        max-height: 250px;
+        height: 30vh;
         margin: 2rem 0rem;
         position: relative;
         transition: 0.5s ease;
@@ -259,6 +260,12 @@ button {
           height: 100%;
           opacity: 0;
           object-fit: fill;
+        }
+        video{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+
         }
         a {
           position: absolute;
@@ -400,6 +407,7 @@ footer {
     .intro-left {
       flex: unset;
       padding: unset;
+      margin: 5rem 0rem;
 
       .intro-descript {
         padding: 0rem 2rem;
@@ -413,7 +421,6 @@ footer {
       width: 100%;
       svg {
         width: 100%;
-        border: 1px solid red;
       }
     }
   }
@@ -460,6 +467,7 @@ footer {
         height: auto;
         position: unset;
         opacity: 1;
+ 
         .project {
           width: 80%;
           margin: 1rem;
@@ -471,17 +479,20 @@ footer {
           }
         }
       }
-      &:nth-child(even) {
-        background-color: $primary;
-        .project {
-          border: 1px solid $pink;
+      &:nth-child(odd) {
+        background-color: $pink;
+        .works-container {
+          .project {
+            border: 1px solid $primary;
+          }
         }
       }
       &:nth-child(even) {
-        background-color: $pink;
-        .project {
-          border: 1px solid $primary;
-        }
+        background-color: $primary;
+        .works-container {
+          .project {
+            border: 1px solid $pink;
+          }
       }
     }
   }
@@ -550,4 +561,5 @@ footer {
       }
     }
   }
+}
 }

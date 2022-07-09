@@ -16,7 +16,7 @@ nav {
 
 nav .logo-container {
   flex: 1;
-  padding-left: 20px;
+  padding-left: 60px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -25,7 +25,6 @@ nav .logo-container {
 
 nav .logo-container img {
   height: 5rem;
-  max-width: 100%;
 }
 
 nav .logo-container .navBtn {
@@ -62,12 +61,12 @@ nav .navlink-container a:hover i {
 
 @media (min-width: 240px) and (max-width: 480px) {
   nav .logo-container {
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
     position: relative;
+    padding: unset;
   }
   nav .logo-container .navBtn {
     display: flex;
@@ -515,7 +514,7 @@ button {
 
 .gallery-container .panel .works-container .project {
   width: 50%;
-  max-height: 250px;
+  height: 30vh;
   margin: 2rem 0rem;
   position: relative;
   transition: 0.5s ease;
@@ -526,6 +525,12 @@ button {
   height: 100%;
   opacity: 0;
   object-fit: fill;
+}
+
+.gallery-container .panel .works-container .project video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .gallery-container .panel .works-container .project a {
@@ -667,6 +672,7 @@ footer {
   .intro-container .intro-left {
     flex: unset;
     padding: unset;
+    margin: 5rem 0rem;
   }
   .intro-container .intro-left .intro-descript {
     padding: 0rem 2rem;
@@ -679,7 +685,6 @@ footer {
   }
   .intro-container .intro-right svg {
     width: 100%;
-    border: 1px solid red;
   }
   .about-container {
     height: auto;
@@ -734,56 +739,56 @@ footer {
   .gallery-container .panel .works-container .project a {
     opacity: 1;
   }
+  .gallery-container .panel:nth-child(odd) {
+    background-color: #e9445f;
+  }
+  .gallery-container .panel:nth-child(odd) .works-container .project {
+    border: 1px solid #1a1a2e;
+  }
   .gallery-container .panel:nth-child(even) {
     background-color: #1a1a2e;
   }
-  .gallery-container .panel:nth-child(even) .project {
+  .gallery-container .panel:nth-child(even) .works-container .project {
     border: 1px solid #e9445f;
   }
-  .gallery-container .panel:nth-child(even) {
-    background-color: #e9445f;
-  }
-  .gallery-container .panel:nth-child(even) .project {
-    border: 1px solid #1a1a2e;
-  }
-  .contact-container {
+  .gallery-container .contact-container {
     height: auto;
     padding: 5rem 0rem;
   }
-  .contact-container h2,
-  .contact-container p {
+  .gallery-container .contact-container h2,
+  .gallery-container .contact-container p {
     margin-left: 0rem;
     text-align: center;
   }
-  .contact-container p {
+  .gallery-container .contact-container p {
     margin-left: 0rem;
   }
-  .contact-container .form-container {
+  .gallery-container .contact-container .form-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin-top: 7rem;
   }
-  .contact-container .form-container .form-title {
+  .gallery-container .contact-container .form-container .form-title {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     transform: unset;
   }
-  .contact-container .form-container .form-title .fh3 {
+  .gallery-container .contact-container .form-container .form-title .fh3 {
     align-self: unset;
   }
-  .contact-container .form-container .form-title .sh3 {
+  .gallery-container .contact-container .form-container .form-title .sh3 {
     align-self: unset;
   }
-  .contact-container .form-container .contact-form {
+  .gallery-container .contact-container .form-container .contact-form {
     width: 95%;
     max-width: 900px;
     padding: 0.5rem 0rem;
   }
-  .contact-container .form-container .socials-container {
+  .gallery-container .contact-container .form-container .socials-container {
     width: 100%;
     margin-left: 0rem;
     display: flex;
@@ -792,14 +797,14 @@ footer {
     flex-direction: row;
     position: relative;
   }
-  .contact-container .form-container .socials-container::before, .contact-container .form-container .socials-container::after {
+  .gallery-container .contact-container .form-container .socials-container::before, .gallery-container .contact-container .form-container .socials-container::after {
     display: none;
   }
-  .contact-container .form-container .socials-container a {
+  .gallery-container .contact-container .form-container .socials-container a {
     width: 10%;
     margin: 0rem 1rem;
   }
-  .contact-container .form-container .socials-container a svg {
+  .gallery-container .contact-container .form-container .socials-container a svg {
     width: 100%;
   }
 }
