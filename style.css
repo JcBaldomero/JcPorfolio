@@ -271,7 +271,6 @@ button {
 
 .intro-container .intro-left,
 .intro-container .intro-right {
-  padding-top: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;

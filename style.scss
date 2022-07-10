@@ -54,7 +54,6 @@ button {
   @include flexBox(center, center, row);
   .intro-left,
   .intro-right {
-    padding-top: 1rem;
     @include flexBox(center, center, column);
   }
   .intro-left {
