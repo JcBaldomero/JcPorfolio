@@ -130,38 +130,56 @@ button {
   @include flexBox(center, center, row);
 
   .about-banner {
-    width: 65%;
-    max-width: 900px;
+    width: 50%;
+    max-width: 600px;
     height: 350px;
-    z-index: -2;
-    background: url('./images/background/top-view-person-writing-laptop-with-copy-spaceLeft.png')
-      no-repeat;
+    background: url('./images/background/pexels-mikael-blomkvist-6476587.jpg')
+    no-repeat;
+    background-size: contain;
     position: relative;
-   
+    // -webkit-transform: scaleX(-1); //flips the  content
+    // -moz-transform: scaleX(-1);
+    // -o-transform: scaleX(-1);
+    // transform: scaleX(-1);
+    // filter: FlipH;
+    // -ms-filter: "FlipH";
+   #primaryBlob{
+    width: 45%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    top: -45%;
+    left: -20%;
+    transform: rotate(230deg);
+   }
+   #Dots{
+    position: absolute;
+    top: 30%;
+    left: -25%;
+    z-index: -2;
+  }
 
     .about-card,
     .show-on-scroll {
       background-color: $primary;
-      color: white;
-      padding: 2.5rem 2.5rem;
+      padding: 1.5rem;
       width: 45%;
       position: absolute;
-      top: 50%;
+      top: 90%;
       opacity: 0;
-      right: -15%;
+      right: -5%;
       transform: translate(50%, -50%);
       transition: 0.6s ease-out;
       h3 {
         color: $pink;
         margin-bottom: 1rem;
+        font-size: clamp(1rem, 2rem ,5rem);
       }
-      ul {
-        list-style: disc;
-        li {
-          font-weight: $regular;
-          margin-bottom: 1rem;
+        p {
+          color: white;
+          text-align:left;
+          line-height: 1.7rem;
         }
-      }
     }
     .is-visible {
       opacity: 1;
@@ -242,7 +260,7 @@ button {
       opacity: 0;
       padding-top: 1rem;
       @include flexBox(flex-start,center,column);
-      transition: 1s ease-in;
+      transition:  .5s ease-in;
       h2 {
         width: 100%;
         font-size: clamp(2rem, 3rem, 6vw);
@@ -253,11 +271,10 @@ button {
         height: 30vh;
         margin: 2rem 0rem;
         position: relative;
-        transition: 0.5s ease;
+        transition: 1s ease;
         img {
           width: 100%;
           height: 100%;
-          opacity: 0;
           object-fit: fill;
         }
         video{
@@ -270,9 +287,7 @@ button {
           position: absolute;
           text-decoration: underline;
           color: white;
-          background-color: rgba(255, 0, 0, 0.815);
           padding: 0.5rem;
-          opacity: 0;
           bottom: 0%;
           left: 0%;
           transition: 0.3s ease;
@@ -332,7 +347,7 @@ button {
     text-shadow: none;
     background-image: none;
     color: transparent;
-
+     
     &:nth-child(even) {
       background-color: $primary;
       .works-container {
@@ -354,16 +369,9 @@ button {
       }
     }
     .works-container {
+      transition: 2s ease;
       opacity: 1;
-      .project {
-        img {
-          opacity: 1;
-        }
-        a {
-          opacity: 1;
-          font-weight: $sbold;
-        }
-      }
+      
     }
   }
 }
@@ -427,17 +435,19 @@ footer {
   // About section
   .about-container {
     height: auto;
-    margin: 10rem 0rem 2rem 0rem;
+    margin: 10rem 0rem 0rem 0rem;
     .about-banner {
       width: 100%;
-      .about-card {
-        padding: 1.5rem 2.5rem;
-        width: 100%;
-        top: 130%;
-        right: unset;
-        transform: translateY(unset);
+      #primaryBlob {
+        opacity: 0;
       }
-    }
+      .about-card {
+        width: 100%;
+        top: 96%;
+        right: unset;
+        transform: translateY(0%,-50%);
+      }
+  }
   }
 
   // skills section
@@ -447,7 +457,7 @@ footer {
       @include flexBox(center, center, column);
       width: 100%;
       .row {
-        margin: 3rem 0rem;
+        margin: 2rem 0rem;
       }
     }
   }

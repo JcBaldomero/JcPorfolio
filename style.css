@@ -365,24 +365,40 @@ button {
 }
 
 .about-container .about-banner {
-  width: 65%;
-  max-width: 900px;
+  width: 50%;
+  max-width: 600px;
   height: 350px;
-  z-index: -2;
-  background: url("./images/background/top-view-person-writing-laptop-with-copy-spaceLeft.png") no-repeat;
+  background: url("./images/background/pexels-mikael-blomkvist-6476587.jpg") no-repeat;
+  background-size: contain;
   position: relative;
+}
+
+.about-container .about-banner #primaryBlob {
+  width: 45%;
+  height: 100%;
+  z-index: -1;
+  position: absolute;
+  top: -45%;
+  left: -20%;
+  transform: rotate(230deg);
+}
+
+.about-container .about-banner #Dots {
+  position: absolute;
+  top: 30%;
+  left: -25%;
+  z-index: -2;
 }
 
 .about-container .about-banner .about-card,
 .about-container .about-banner .show-on-scroll {
   background-color: #1a1a2e;
-  color: white;
-  padding: 2.5rem 2.5rem;
+  padding: 1.5rem;
   width: 45%;
   position: absolute;
-  top: 50%;
+  top: 90%;
   opacity: 0;
-  right: -15%;
+  right: -5%;
   transform: translate(50%, -50%);
   transition: 0.6s ease-out;
 }
@@ -391,17 +407,14 @@ button {
 .about-container .about-banner .show-on-scroll h3 {
   color: #e9445f;
   margin-bottom: 1rem;
+  font-size: clamp(1rem, 2rem, 5rem);
 }
 
-.about-container .about-banner .about-card ul,
-.about-container .about-banner .show-on-scroll ul {
-  list-style: disc;
-}
-
-.about-container .about-banner .about-card ul li,
-.about-container .about-banner .show-on-scroll ul li {
-  font-weight: 400;
-  margin-bottom: 1rem;
+.about-container .about-banner .about-card p,
+.about-container .about-banner .show-on-scroll p {
+  color: white;
+  text-align: left;
+  line-height: 1.7rem;
 }
 
 .about-container .about-banner .is-visible {
@@ -503,7 +516,7 @@ button {
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  transition: 1s ease-in;
+  transition: .5s ease-in;
 }
 
 .gallery-container .panel .works-container h2 {
@@ -516,13 +529,12 @@ button {
   height: 30vh;
   margin: 2rem 0rem;
   position: relative;
-  transition: 0.5s ease;
+  transition: 1s ease;
 }
 
 .gallery-container .panel .works-container .project img {
   width: 100%;
   height: 100%;
-  opacity: 0;
   object-fit: fill;
 }
 
@@ -536,9 +548,7 @@ button {
   position: absolute;
   text-decoration: underline;
   color: white;
-  background-color: rgba(255, 0, 0, 0.815);
   padding: 0.5rem;
-  opacity: 0;
   bottom: 0%;
   left: 0%;
   transition: 0.3s ease;
@@ -613,16 +623,8 @@ button {
 }
 
 .gallery-container .panel.open .works-container {
+  transition: 2s ease;
   opacity: 1;
-}
-
-.gallery-container .panel.open .works-container .project img {
-  opacity: 1;
-}
-
-.gallery-container .panel.open .works-container .project a {
-  opacity: 1;
-  font-weight: 600;
 }
 
 .contact-container {
@@ -687,17 +689,19 @@ footer {
   }
   .about-container {
     height: auto;
-    margin: 10rem 0rem 2rem 0rem;
+    margin: 10rem 0rem 0rem 0rem;
   }
   .about-container .about-banner {
     width: 100%;
   }
+  .about-container .about-banner #primaryBlob {
+    opacity: 0;
+  }
   .about-container .about-banner .about-card {
-    padding: 1.5rem 2.5rem;
     width: 100%;
-    top: 130%;
+    top: 96%;
     right: unset;
-    transform: translateY(unset);
+    transform: translateY(0%, -50%);
   }
   .skills-container {
     padding: 0rem 1rem;
@@ -710,7 +714,7 @@ footer {
     width: 100%;
   }
   .skills-container .skill-table .row {
-    margin: 3rem 0rem;
+    margin: 2rem 0rem;
   }
   .gallery-container {
     min-height: 200vh;
