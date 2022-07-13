@@ -234,147 +234,52 @@ button {
   }
 }
 
-// gallery-container
-.gallery-container {
-  min-height: 130vh;
-  display: flex;
-  overflow: hidden;
-  .panel {
-    flex: 2;
-    @include flexBox(center, center, column);
+// projects container
+.projects-container{
+  width: 100%;  height: auto;
+  @include flexBox(center,center, column);
+  .projects-description{
     text-align: center;
-    transition: background-image 1s ease-out, flex 1s ease,
-      color 0.2s ease-in-out;
-    cursor: pointer;
-    color: white;
-    text-shadow: 1px 1px 2px rgb(18, 18, 19);
-    position: relative;
-    h3 {
-      font-size: 2.5rem;
+  }
+  .projects-content{
+    width: 100%; height: 100vh; 
+    @include flexBox(center,center, row);
+    .project-rectangle{
+      width: 100%; height: 40vh;
+      background-color: $pink;
+      position: relative;
+    .project-grid-block{
+      width:60%; 
+      height: auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      display: grid;
+      grid-gap: 25px;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows:   35vh 35vh;
+    .project-block{
+      box-shadow: 2px 3px 5px  rgba(0, 0, 0, 0.432);
+      
+      img{
+        object-fit: fit;
+        width: 100%; height: 100%;
+        transition: .4s ease;
+        &:hover{
+          filter: brightness(30%);
+          
+        }
+      }
  
     }
-    .works-container {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      opacity: 0;
-      padding-top: 1rem;
-      @include flexBox(flex-start,center,column);
-      transition:  .5s ease-in;
-      h2 {
-        width: 100%;
-        font-size: clamp(2rem, 3rem, 6vw);
-      }
-
-      .project {
-        width: 50%;
-        height: 30vh;
-        margin: 2rem 0rem;
-        position: relative;
-        transition: 1s ease;
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: fill;
-        }
-        video{
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-
-        }
-        a {
-          position: absolute;
-          text-decoration: underline;
-          color: white;
-          padding: 0.5rem;
-          bottom: 0%;
-          left: 0%;
-          transition: 0.3s ease;
-        }
-      }
     }
-    &:nth-child(even) {
-      h2 {
-        color: $pink;
-      }
-      .project {
-        a {
-          background-color: $pink;
-          &:hover {
-            background-color: $primary;
-          }
-        }
-      }
-    }
-    &:nth-child(odd) {
-      h2 {
-        color: $primary;
-      }
-      .project {
-        a {
-          background-color: $primary;
-          &:hover {
-            background-color: $pink;
-          }
-        }
-      }
+
     }
   }
 
-  .panel1 {
-    background: url("./images/background/pexels-隔壁光头老王-wangming'photo-354939.jpg")
-      no-repeat center;
-    background-size: cover;
-  }
-  .panel2 {
-    background: url('./images/background/pexels-ovan-57690.jpg') no-repeat;
-    background-size: cover;
-  }
-  .panel3 {
-    background: url('./images/background/pexels-pixabay-265667.jpg') no-repeat
-      45%;
-    background-size: cover;
-  }
-  .panel4 {
-    background: url('./images/background/pexels-mikechie-esparagoza-1742370.jpg')
-      no-repeat 35%;
-    background-size: cover;
-  }
-  .panel.open {
-    flex: 6;
-    border: none;
-    text-shadow: none;
-    background-image: none;
-    color: transparent;
-     
-    &:nth-child(even) {
-      background-color: $primary;
-      .works-container {
-        .project {
-          &:hover {
-            box-shadow: 2px 2px 6px $pink;
-          }
-        }
-      }
-    }
-    &:nth-child(odd) {
-      background-color: $pink;
-      .works-container {
-        .project {
-          &:hover {
-            box-shadow: 2px 2px 15px $primary;
-          }
-        }
-      }
-    }
-    .works-container {
-      transition: 2s ease;
-      opacity: 1;
-      
-    }
-  }
 }
+
 
 // Contact section
 .contact-container {
@@ -462,113 +367,5 @@ footer {
     }
   }
 
-  // gallery-container
-  .gallery-container {
-    min-height: 200vh;
-    flex-direction: column;
-    .panel {
-      background-image: none;
-      padding: 1rem 0rem;
-      h3 {
-        display: none;
-      }
-      .works-container {
-        height: auto;
-        position: unset;
-        opacity: 1;
- 
-        .project {
-          width: 80%;
-          margin: 1rem;
-          img {
-            opacity: 1;
-          }
-          a {
-            opacity: 1;
-          }
-        }
-      }
-      &:nth-child(odd) {
-        background-color: $pink;
-        .works-container {
-          .project {
-            border: 1px solid $primary;
-          }
-        }
-      }
-      &:nth-child(even) {
-        background-color: $primary;
-        .works-container {
-          .project {
-            border: 1px solid $pink;
-          }
-      }
-    }
-  }
 
-  // Contact section
-  .contact-container {
-    height: auto;
-    padding: 5rem 0rem;
-
-    h2,
-    p {
-      margin-left: 0rem;
-      text-align: center;
-    }
-    p {
-      margin-left: 0rem;
-    }
-
-    .form-container {
-      @include flexBox(center, center, column);
-      margin-top: 7rem;
-      .form-title {
-        @include flexBox(center, center, row);
-        transform: unset;
-        .fh3 {
-          align-self: unset;
-        }
-        .sh3 {
-          align-self: unset;
-        }
-      }
-
-      .contact-form {
-        width: 95%;
-        max-width: 900px;
-        padding: 0.5rem 0rem;
-      }
-
-      // .socials-container {
-      //   width: 100%;
-      //   margin-left: 0rem;
-      //   @include flexBox(space-around, center, row);
-      //   img {
-      //     width: 50px;
-      //   }
-      // }
-
-      .socials-container {
-        width: 100%;
-        margin-left: 0rem;
-        @include flexBox(center, center, row);
-        position: relative;
-
-        &::before,
-        &::after {
-          display: none;
-        }
-
-        a {
-          width: 10%;
-          margin: 0rem 1rem;
-          svg {
-            width: 100%;
-          }
-        }
-      }
-    }
-  }
-}
 }
