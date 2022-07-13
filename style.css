@@ -1,5 +1,53 @@
 /** @format */
 /** @format */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+main {
+  overflow: hidden;
+  position: relative;
+  z-index: 3;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+body {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+h2 {
+  color: #396fb1;
+  font-weight: 800;
+  font-size: clamp(1rem, 4rem, 7rem);
+  margin-bottom: 1rem;
+}
+
+h5 {
+  font-size: clamp(10px, 1rem, 12vw);
+  font-weight: 600;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
 nav {
   display: flex;
   justify-content: center;
@@ -99,6 +147,54 @@ nav .navlink-container a:hover i {
     right: 30%;
     box-shadow: 1px 1px 62px 1000px rgba(26, 25, 25, 0.527), 1px 1px 2px rgba(0, 0, 0, 0.253);
   }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+main {
+  overflow: hidden;
+  position: relative;
+  z-index: 3;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+body {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+h2 {
+  color: #396fb1;
+  font-weight: 800;
+  font-size: clamp(1rem, 4rem, 7rem);
+  margin-bottom: 1rem;
+}
+
+h5 {
+  font-size: clamp(10px, 1rem, 12vw);
+  font-weight: 600;
+}
+
+a,
+button {
+  cursor: pointer;
 }
 
 .slider {
@@ -208,54 +304,6 @@ nav .navlink-container a:hover i {
   100% {
     opacity: 0;
   }
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  font-family: 'Raleway', sans-serif;
-  scroll-behavior: smooth;
-}
-
-body {
-  max-width: 1920px;
-  margin: 0 auto;
-}
-
-main {
-  overflow: hidden;
-  position: relative;
-  z-index: 3;
-}
-
-::-webkit-scrollbar {
-  width: 0px;
-}
-
-body {
-  -ms-overflow-style: none;
-  /* IE and Edge */
-  scrollbar-width: none;
-  /* Firefox */
-}
-
-h2 {
-  color: #396fb1;
-  font-weight: 800;
-  font-size: clamp(1rem, 4rem, 7rem);
-  margin-bottom: 1rem;
-}
-
-h5 {
-  font-size: clamp(10px, 1rem, 12vw);
-  font-weight: 600;
-}
-
-a,
-button {
-  cursor: pointer;
 }
 
 .intro-container {

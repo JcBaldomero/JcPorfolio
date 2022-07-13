@@ -20,3 +20,50 @@ $greytext:hsl(0, 3%, 29%);
 $regular: 400;
 $sbold:600;
 $ebold:800;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+  main {
+    overflow: hidden;
+    position: relative;
+    z-index: 3;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+  body{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
+  
+  // section titles
+  h2 {
+    color: $hover;
+    font-weight: $ebold;
+    font-size: clamp(1rem, 4rem, 7rem);
+    margin-bottom: 1rem;
+  }
+  // section description
+  h5 {
+    font-size: clamp(10px, 1rem, 12vw);
+    font-weight: $sbold;
+  }
+  a,
+  button {
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,61 @@
+/** @format */
+@import '../nav';
+@import '../header';
+
+
+body {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+
+  .logo-design-container{
+    width: 100%; height: auto;
+    @include flexBox(center,center,column);
+    padding: 3rem 0rem 10rem 0rem;
+   
+   .logo-description{
+    width: 80%;
+    margin-bottom: 4rem;
+    h5{
+      width: 80ch;
+    }
+  }
+
+  .logo-contents{
+    width: 80%; height: 80vh;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50% 50%;
+     .logo{
+        box-shadow: 4px -3px 10px rgba(0, 0, 0, 0.548);
+      img{
+        width: 100%; 
+        object-fit: fill;
+      }
+    }
+  }
+}
+
+
+
+  // footer section
+footer {
+  width: 100%;
+  background-color: $pink;
+  padding: 1rem 0rem;
+  @include flexBox(center, center, row);
+  color: white;
+}
+
+
+
+
+@media (min-width: 240px) and (max-width: 480px) {
+  body {
+    max-width: unset;
+    margin: unset;
+
+
+}
+}
