@@ -501,6 +501,7 @@ button {
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  margin: 3rem 0rem;
 }
 
 .projects-container .projects-content .project-rectangle {
@@ -525,17 +526,80 @@ button {
 
 .projects-container .projects-content .project-rectangle .project-grid-block .project-block {
   box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.432);
+  position: relative;
+  overflow: hidden;
+  border-top: 0.5px solid rgba(0, 0, 0, 0.445);
+  transition: .8s ease-in;
+  transition-delay: .4s;
 }
 
-.projects-container .projects-content .project-rectangle .project-grid-block .project-block img {
-  object-fit: fit;
+.projects-container .projects-content .project-rectangle .project-grid-block .project-block .block-link {
   width: 100%;
   height: 100%;
-  transition: .4s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  transition: 1s ease;
+  opacity: 0;
+  background-color: #396fb1;
 }
 
-.projects-container .projects-content .project-rectangle .project-grid-block .project-block img:hover {
-  filter: brightness(30%);
+.projects-container .projects-content .project-rectangle .project-grid-block .project-block .block-link a {
+  color: white;
+  font-size: 3.5rem;
+  transition: .5s ease;
+  font-weight: 600;
+}
+
+.projects-container .projects-content .project-rectangle .project-grid-block .project-block .block-link a:hover {
+  color: #e9445f;
+}
+
+.projects-container .projects-content .project-rectangle .project-grid-block .project-block .block-link:hover {
+  opacity: 1;
+}
+
+.projects-container .projects-content .project-rectangle .project-grid-block .block1, .projects-container .projects-content .project-rectangle .project-grid-block .show-on-scroll {
+  background: #396fb1 url("./images/SocialMedia/Breakfast.png") center no-repeat;
+  background-size: cover;
+  left: -50%;
+  opacity: 0;
+}
+
+.projects-container .projects-content .project-rectangle .project-grid-block .is-visible {
+  opacity: 1;
+  left: 0%;
+}
+
+.projects-container .projects-content .project-rectangle .project-grid-block .block2 {
+  background: #396fb1 url("./images/Projects/Websites/ValorantAccountWebsite.png") center no-repeat;
+  background-size: cover;
+  left: 50%;
+}
+
+.projects-container .projects-content .project-rectangle .project-grid-block .is-visible {
+  left: 0%;
+}
+
+.projects-container .projects-content .project-rectangle .project-grid-block .block3 {
+  background: #396fb1 url("./images/Projects/Websites/BelisonWebsite.png") center no-repeat;
+  background-size: cover;
+}
+
+.projects-container .projects-content .project-rectangle .project-grid-block .block4 {
+  background: #396fb1 url("./images/Projects/certificates/ResponsiveWebdesign.png") no-repeat;
+  background-size: cover;
+  left: 50%;
+}
+
+.projects-container .projects-content .project-rectangle .project-grid-block .is-visible {
+  left: 0%;
 }
 
 .contact-container {
