@@ -348,6 +348,52 @@ body {
   object-fit: fill;
 }
 
+.social-design-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem 0rem 10rem 0rem;
+}
+
+.social-design-container .social-description {
+  width: 95%;
+  margin-bottom: 4rem;
+}
+
+.social-design-container .social-description h5 {
+  width: 80ch;
+}
+
+.social-design-container .social-contents {
+  width: 95%;
+  height: auto;
+  display: grid;
+  grid-gap: 25px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.social-design-container .social-contents .social img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.social-design-container .social-contents .soc3 {
+  grid-row: 1/4;
+  grid-column: 3/4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-design-container .social-contents .soc3 video {
+  width: 100%;
+  height: 65%;
+}
+
 footer {
   width: 100%;
   background-color: #e9445f;
