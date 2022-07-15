@@ -1,0 +1,81 @@
+/** @format */
+@import '../nav';
+@import '../header';
+
+
+body {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+
+ 
+
+.certificate-container{
+   width: 100%; height: fit-content;
+   @include flexBox(center,center,row);
+   background-color: $hover;
+   padding: 5rem 0rem;
+    &::before{
+        content: "";
+        width: 100%; height: 100%;
+        background-color: rgba(8, 8, 8, 0.288);
+        position: absolute;
+        z-index: 1;
+    }
+   .certificate-content{
+    background-color: $primary;
+    width: 40%; height: 100vh;
+    padding: 3rem 0rem;
+    margin-left: 10rem;
+    position: relative;
+    h2{
+        font-size: 2rem;
+        color: white;
+        letter-spacing: .3rem;
+        background-color: hsl(0, 19%, 41%);
+        padding: 2rem;
+        position: absolute;
+        right:-30%;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 4;
+    }
+    .grid-container{
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(2, 20vw);
+        grid-template-rows: repeat(3, 25vh);
+        position: absolute;
+        left: -35%;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 9;
+        img{
+            width: 100%; height: 100%;
+            object-fit: fill;
+        }
+    }
+   }
+}
+
+
+  // footer section
+footer {
+  width: 100%;
+  background-color: $pink;
+  padding: 1rem 0rem;
+  @include flexBox(center, center, row);
+  color: white;
+}
+
+
+
+
+@media (min-width: 240px) and (max-width: 480px) {
+  body {
+    max-width: unset;
+    margin: unset;
+
+
+}
+}
