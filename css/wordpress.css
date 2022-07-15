@@ -321,21 +321,22 @@ body {
 }
 
 .wordpress-container .wordpress-content {
-  width: 60%;
+  width: 65%;
   height: 75%;
   background-color: #396fb1;
   position: relative;
 }
 
 .wordpress-container .wordpress-content img {
-  width: 100%;
+  width: 90%;
   height: 75%;
   background-color: grey;
   object-fit: fill;
   position: absolute;
   top: 50%;
-  left: 15%;
+  left: 25%;
   transform: translateY(-50%);
+  box-shadow: 4px 1px 8px rgba(0, 0, 0, 0.486);
 }
 
 .wordpress-container .wordpress-title-container {
@@ -343,7 +344,7 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  width: 40%;
+  width: 35%;
   height: 75%;
   position: relative;
   padding-right: 2rem;
@@ -366,7 +367,7 @@ body {
   height: 100%;
   transform: rotate(-90deg);
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: flex-start;
   flex-direction: column;
 }
