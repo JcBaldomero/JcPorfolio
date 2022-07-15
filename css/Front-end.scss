@@ -1,0 +1,89 @@
+/** @format */
+@import '../nav';
+@import '../header';
+
+
+body {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+
+ 
+
+.front-end-container{
+    width: 100%; height: 100vh;
+    @include flexBox(center,center,row);
+    .left-content,
+    .right-content{
+        width: 50%;
+        padding: .5rem;
+        img{
+            width: 60%; height: 50%;
+            border: 1px solid rgba(0, 0, 0, 0.336);
+            margin: .5rem 0rem;
+        }
+       
+    }
+    .left-content{
+        @include flexBox(center,flex-end,column);
+        position: relative;
+    .web2{
+        width: 85%;
+        height: 70%
+    }
+    .square{
+        width: 90px; height: 85px;
+        background-color: $hover;
+        position: absolute;
+        bottom: -4%;
+        left:10%;
+        z-index: -1;
+    }
+    }
+
+    .right-content{
+        @include flexBox(center,flex-start,column);
+        position: relative;
+
+        h2{
+            width: max-content;
+            background-color: $primary;
+            padding: .5rem 1rem;
+            font-size: 2.5rem;
+            margin-bottom: 0rem;
+            color: $pink;
+            position: absolute;
+            left: 43%;
+            bottom: -4%;
+            transform: translateX(-47%);
+        }
+    .web3{
+        width: 90%;
+        height: 65%;
+    }
+
+}
+
+}
+
+
+  // footer section
+footer {
+  width: 100%;
+  background-color: $pink;
+  padding: 1rem 0rem;
+  @include flexBox(center, center, row);
+  color: white;
+}
+
+
+
+
+@media (min-width: 240px) and (max-width: 480px) {
+  body {
+    max-width: unset;
+    margin: unset;
+
+
+}
+}
