@@ -1,0 +1,401 @@
+/** @format */
+/** @format */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+main {
+  overflow: hidden;
+  position: relative;
+  z-index: 3;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+body {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+h2 {
+  color: #396fb1;
+  font-weight: 800;
+  font-size: clamp(1rem, 4rem, 7rem);
+  margin-bottom: 1rem;
+}
+
+h5 {
+  font-size: clamp(10px, 1rem, 12vw);
+  font-weight: 600;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: #1a1a2e;
+  color: white;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+nav .logo-container {
+  flex: 1;
+  padding-left: 60px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+
+nav .logo-container img {
+  height: 5rem;
+}
+
+nav .logo-container .navBtn {
+  display: none;
+}
+
+nav .navlink-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+nav .navlink-container a {
+  margin: 0rem 0.5rem;
+  font-size: 1.3rem;
+  color: white;
+  transition: .3s ease;
+}
+
+nav .navlink-container a:hover {
+  color: #396fb1;
+  transition: 0.3s ease;
+}
+
+nav .navlink-container a i {
+  opacity: 0;
+}
+
+nav .navlink-container a:hover i {
+  opacity: 1;
+}
+
+@media (min-width: 240px) and (max-width: 480px) {
+  nav .logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    padding: unset;
+  }
+  nav .logo-container .navBtn {
+    display: flex;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    z-index: 3;
+  }
+  nav .navlink-container {
+    width: 85%;
+    height: 100vh;
+    padding: 1rem 1rem 0rem 4rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0%;
+    right: 100%;
+    transition: 1s cubic-bezier(0.43, 0.92, 0.41, 0.64);
+    background-color: white;
+    transition: .3s ease;
+  }
+  nav .navlink-container a {
+    margin: 1rem 0rem;
+    color: #396fb1;
+  }
+  nav .navlink-container a i {
+    opacity: 1;
+  }
+  nav .navlink-container.open {
+    right: 30%;
+    box-shadow: 1px 1px 62px 1000px rgba(26, 25, 25, 0.527), 1px 1px 2px rgba(0, 0, 0, 0.253);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+main {
+  overflow: hidden;
+  position: relative;
+  z-index: 3;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+body {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+h2 {
+  color: #396fb1;
+  font-weight: 800;
+  font-size: clamp(1rem, 4rem, 7rem);
+  margin-bottom: 1rem;
+}
+
+h5 {
+  font-size: clamp(10px, 1rem, 12vw);
+  font-weight: 600;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+.slider {
+  width: 100%;
+  height: 370px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02), 6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028), 12.5px 12.5px 10px rgba(0, 0, 0, 0.035), 22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042), 41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05), 100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+.slider .slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  33.333% {
+    opacity: 0;
+  }
+  66.666% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade2 {
+  0% {
+    opacity: 0;
+  }
+  33.333% {
+    opacity: 1;
+  }
+  66.666% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade3 {
+  0% {
+    opacity: 0;
+  }
+  33.333% {
+    opacity: 0;
+  }
+  66.666% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  33.333% {
+    opacity: 0;
+  }
+  66.666% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+@keyframes fadein2 {
+  0% {
+    opacity: 0;
+  }
+  33.333% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  66.666% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadein3 {
+  0% {
+    opacity: 0;
+  }
+  33.333% {
+    opacity: 0;
+  }
+  66.666% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.wordpress-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.wordpress-container .wordpress-content {
+  width: 60%;
+  height: 75%;
+  background-color: #396fb1;
+  position: relative;
+}
+
+.wordpress-container .wordpress-content img {
+  width: 100%;
+  height: 75%;
+  background-color: grey;
+  object-fit: fill;
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translateY(-50%);
+}
+
+.wordpress-container .wordpress-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 40%;
+  height: 75%;
+  position: relative;
+  padding-right: 2rem;
+}
+
+.wordpress-container .wordpress-title-container .project-title {
+  width: 100%;
+  height: 15%;
+}
+
+.wordpress-container .wordpress-title-container .project-title h2 {
+  font-size: clamp(1rem, 2rem, 3rem);
+  color: #1a1a2e;
+  margin-left: 1rem;
+}
+
+.wordpress-container .wordpress-title-container .wordpress-title {
+  align-self: flex-end;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.wordpress-container .wordpress-title-container .wordpress-title h2 {
+  color: rgba(128, 128, 128, 0.308);
+  margin-left: 1rem;
+}
+
+.wordpress-container .wordpress-title-container .wordpress-title .block {
+  width: 45%;
+  height: 1rem;
+  background-color: #396fb1;
+}
+
+footer {
+  width: 100%;
+  background-color: #e9445f;
+  padding: 1rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  color: white;
+}
+
+@media (min-width: 240px) and (max-width: 480px) {
+  body {
+    max-width: unset;
+    margin: unset;
+  }
+}
