@@ -595,7 +595,7 @@ button {
   text-align: center;
   transition: 1s ease;
   opacity: 0;
-  background-color: #396fb1;
+  background-color: #1a1a2e;
 }
 
 .projects-container .projects-content .project-rectangle .project-grid-block .project-block .block-link a {
@@ -738,5 +738,83 @@ footer {
   }
   .skills-container .skill-table .row {
     margin: 2rem 0rem;
+  }
+  .projects-container {
+    height: auto;
+  }
+  .projects-container .projects-content {
+    height: auto;
+  }
+  .projects-container .projects-content .project-rectangle {
+    width: 100%;
+    height: auto;
+    background-color: unset;
+  }
+  .projects-container .projects-content .project-rectangle .project-grid-block {
+    width: 100%;
+    height: auto;
+    position: unset;
+    transform: translate(0%, 0%);
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 30vh);
+  }
+  .projects-container .projects-content .project-rectangle .project-grid-block .project-block {
+    position: relative;
+    transition: .8s ease-in;
+    transition-delay: .4s;
+  }
+  .projects-container .projects-content .project-rectangle .project-grid-block .project-block .block-link {
+    width: auto;
+    height: auto;
+    padding: .5rem;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    transform: translate(0%, -100%);
+    opacity: 1;
+  }
+  .projects-container .projects-content .project-rectangle .project-grid-block .project-block .block-link a {
+    text-decoration: underline;
+    font-size: 1.3rem;
+  }
+  .projects-container .projects-content .project-rectangle .project-grid-block .project-block .block-link:hover {
+    opacity: 1;
+  }
+  .projects-container .projects-content .project-rectangle .project-grid-block .block1, .projects-container .projects-content .project-rectangle .project-grid-block .show-on-scroll {
+    left: 0%;
+    opacity: 0;
+  }
+  .projects-container .projects-content .project-rectangle .project-grid-block .block2 {
+    left: 0%;
+    opacity: 0;
+  }
+  .projects-container .projects-content .project-rectangle .project-grid-block .is-visible {
+    left: 0%;
+    opacity: 1;
+  }
+  .projects-container .projects-content .project-rectangle .project-grid-block .block3 {
+    opacity: 0;
+  }
+  .projects-container .projects-content .project-rectangle .project-grid-block .block4 {
+    opacity: 0;
+    left: 0%;
+  }
+  .projects-container .projects-content .project-rectangle .project-grid-block .is-visible {
+    opacity: 1;
+    left: 0%;
+  }
+  .contact-container {
+    text-align: center;
+    padding: 0rem .5rem;
+  }
+  .contact-container h2 {
+    font-size: clamp(2.5rem, 4rem, 5vw);
+  }
+  .contact-container p {
+    color: #e9445f;
+  }
+  .contact-container .contactLottie {
+    margin-top: 2rem;
+    cursor: pointer;
   }
 }

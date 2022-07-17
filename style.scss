@@ -236,7 +236,7 @@
         text-align: center;
         transition: 1s ease;
         opacity: 0;
-        background-color: #396fb1;
+        background-color: $primary;
         a{
           color: white;
           font-size: 3.5rem;
@@ -381,6 +381,95 @@ footer {
       }
     }
   }
+
+
+  
+ // projects container
+.projects-container{
+  height: auto;
+  .projects-content{
+    height:auto; 
+    .project-rectangle{
+      width: 100%; height: auto;
+      background-color: unset;
+    .project-grid-block{
+      width:100%; height: auto;
+      position: unset;
+      transform: translate(0%,0%);
+      grid-template-columns: 1fr ;
+      grid-template-rows: repeat(4, 30vh);
+
+      
+    .project-block{
+      position: relative;
+      transition: .8s ease-in;
+      transition-delay: .4s;
+
+      .block-link{
+        width: auto; height: auto;
+        padding: .5rem;
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        transform: translate(-0%,-100%);
+        opacity: 1;
+        a{
+          text-decoration: underline;
+          font-size: 1.3rem;
+        }
+        &:hover{
+          opacity: 1;
+        }
+      }
+      
+    } 
+
+    .block1, .show-on-scroll{
+       left: 0%;
+       opacity: 0;
+    } 
+    .block2{
+      left: 0%;
+      opacity: 0;
+   }
+   .is-visible{
+    left: 0%;
+    opacity: 1;
+  }
+   .block3{
+     opacity: 0;
+    }
+    .block4{
+      opacity: 0;
+        left: 0%;
+      }
+      .is-visible{
+        opacity: 1;
+        left: 0%;
+      }
+    
+    }
+
+    }
+  }
+
+}
+
+// Contact section
+.contact-container {
+  text-align: center;
+  padding: 0rem .5rem;
+  h2 {
+    font-size: clamp(2.5rem, 4rem, 5vw);
+  }
+  p {
+    color: $pink;
+  }
+  .contactLottie{
+    margin-top: 2rem;
+    cursor: pointer;
+  }
+}
 
 
 }
