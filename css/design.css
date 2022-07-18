@@ -410,4 +410,32 @@ footer {
     max-width: unset;
     margin: unset;
   }
+  .logo-design-container .logo-description {
+    width: 100%;
+    padding: 0rem 1rem;
+  }
+  .logo-design-container .logo-description h5 {
+    width: unset;
+  }
+  .logo-design-container .logo-contents {
+    width: 90%;
+    height: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 60% 60%;
+  }
+  .social-design-container .social-description h5 {
+    width: unset;
+  }
+  .social-design-container .social-contents {
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: 1fr;
+  }
+  .social-design-container .social-contents .soc3 {
+    grid-row: unset;
+    grid-column: unset;
+  }
+  .social-design-container .social-contents .soc3 video {
+    height: auto;
+  }
 }
