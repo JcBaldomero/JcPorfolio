@@ -94,11 +94,72 @@ footer {
 
 
 
-@media (min-width: 240px) and (max-width: 480px) {
+@media (min-width: 240px) and (max-width: 1080px) {
   body {
     max-width: unset;
     margin: unset;
+}
+
+.wordpress-container{
+  width: 100%; height: 100vh;
+  @include flexBox(center,center,column);
+
+
+.wordpress-content{
+  width: 100%; height: 70%;
+  @include flexBox(center,center,row);
+  img{
+      width: 90%; height: auto;
+      position: unset;
+      transform: translateY(-0%);
+  }
+}  
+
+.wordpress-title-container{
+  @include flexBox(center,center,column);
+  width:100%; height: 70%;
+  position: relative;
+  padding-right: unset;
+  .project-title{
+      width: 100%;
+      height: auto;
+      h2{
+          font-size: clamp(1rem, 2rem, 3rem);
+          margin-left: 1rem;
+      }
+  }
+
+
+  .wordpress-title{
+      align-self: unset;
+      width: auto;
+      height: auto;
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+      @include flexBox(center,center,column);
+      h2{
+          color: rgba(0, 0, 0, 0.308);
+          margin-left: 0rem;
+          font-size: clamp(1rem, 3.5rem, 5rem);
+      }
+      .block{
+          width: 45%; height: 1rem;
+          background-color: $hover;
+      }
+  }
+
+}  
+
+
+
+
+
+
 
 
 }
+
+
 }
