@@ -83,7 +83,44 @@ footer {
   body {
     max-width: unset;
     margin: unset;
+}
 
+
+.front-end-container{
+    @include flexBox(flex-start,center,column);
+    .left-content,
+    .right-content{
+        width: 100%;
+        img{
+            width: 100%; height: auto;
+        }
+       
+    }
+    .left-content{
+        @include flexBox(center,center,column);
+    .web2{
+        width: 100%;
+        height: auto;
+    }
+    .square{
+       display: none
+    }
+    }
+
+    .right-content{
+        @include flexBox(center,center,column);
+
+        h2{
+            font-size: 2rem;
+            position: unset;
+            transform: translateX(-0%);
+        }
+    .web3{
+        width: 100%;
+        height: auto;
+    }
+
+}
 
 }
 }
