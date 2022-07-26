@@ -499,8 +499,9 @@ button {
 
 .skills-container .skill-table .row h3 {
   color: #e9445f;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 1.7rem;
+  letter-spacing: 1px;
   margin: 1rem 0rem;
 }
 
