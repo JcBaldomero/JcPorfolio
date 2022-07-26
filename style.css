@@ -359,14 +359,14 @@ button {
 }
 
 .intro-container .intro-left .intro-descript h4 span {
-  color: #396fb1;
+  color: #e9445f;
   font-weight: 600;
 }
 
 .intro-container .intro-left .intro-descript p {
   margin: 0rem 0rem 1rem 0rem;
   line-height: 1.25;
-  color: #e9445f;
+  color: #4c4848;
   font-size: clamp(16px, 1.2rem, 5vw);
   overflow: hidden;
   max-width: 53ch;
