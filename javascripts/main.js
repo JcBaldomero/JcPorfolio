@@ -97,4 +97,80 @@ var typed = new Typed(".typing",{
             );
             }
             
-            
+
+
+// local projects data
+const projects = [
+  {
+    title:"Graphic design",
+    img:"../images/SocialMedia/Breakfast.png",
+    description:"My works with graphic design using canva and premiere pro",
+    link:"https://jcbaldomero.github.io/JcPorfolio/Design.html"
+  },
+  {
+    title:"Front-end Development",
+    img:"../images/Projects/Websites/ValorantAccountWebsite.png",
+    description:"Websites i developed using tools like HTML5,CSS3,SASS and JavaScript",
+    link:"https://jcbaldomero.github.io/JcPorfolio/frontEnd.html"
+  },
+  {
+    title:"Wordpress",
+    img:"../images/Projects/Websites/BelisonWebsite.png",
+    description:"Websites I developed using wordpress and elementor page builder",
+    link:"https://jcbaldomero.github.io/JcPorfolio/wordpress.html"
+  },
+  {
+    title:"Certificates",
+    img:"../images/Projects/certificates/ResponsiveWebdesign.png",
+    description:"My works with graphic design using canva and premiere pro",
+    link:"https://jcbaldomero.github.io/JcPorfolio/Certificate.html"
+  }
+];
+   
+
+// Projects functions
+const img = document.getElementById("banner-img");
+const title = document.getElementById("title");
+const text = document.getElementById("text");
+const link = document.getElementById("link");
+
+const prevBtn = document.querySelector(".prevbtn")
+const nextBtn = document.querySelector(".nextbtn")
+
+// starting value
+let currentItem = 0;
+
+
+
+// load initial value
+window.addEventListener("DOMContentLoaded", function(){
+  showProjects()
+})
+
+
+function showProjects(){
+  const value = projects[currentItem]
+  img.src = value.img;
+  title.textContent = value.title;
+  text.textContent = value.description;
+  link.href = value.link    
+}
+
+// buttons funtion
+
+nextBtn.addEventListener('click', function(){
+  currentItem++;
+  if(currentItem > projects.length -1){
+      currentItem = 0;
+  }
+  showProjects();
+})
+
+
+prevBtn.addEventListener('click', function(){
+  currentItem--;
+  if(currentItem < 0){
+      currentItem = projects.length -1;
+  }
+  showProjects();
+})

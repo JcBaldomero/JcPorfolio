@@ -6,7 +6,7 @@ nav {
   @include flexBox(center, center, row);
   background-color: $primary;
   color: white;
-  padding: 1rem;
+  padding: 0.5rem;
   position: sticky;
   top: 0;
   z-index: 99;
