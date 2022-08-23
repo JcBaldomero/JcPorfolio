@@ -103,7 +103,7 @@ var typed = new Typed(".typing",{
 const projects = [
   {
     title:"Graphic design",
-    img:"../images/SocialMedia/Breakfast.png",
+    img:"https://imgbox.com/Z66iVw7M",
     description:"Graphic design projects using Canva and Premiere pro",
     link:"https://jcbaldomero.github.io/JcPorfolio/Design.html"
   },
