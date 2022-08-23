@@ -103,25 +103,25 @@ var typed = new Typed(".typing",{
 const projects = [
   {
     title:"Graphic design",
-    img:"https://imgbox.com/Z66iVw7M",
+    img:"https://jcbaldomero.github.io/JcPorfolio/images/SocialMedia/Breakfast.png",
     description:"Graphic design projects using Canva and Premiere pro",
     link:"https://jcbaldomero.github.io/JcPorfolio/Design.html"
   },
   {
     title:"Front-end Development",
-    img:"../images/Projects/Websites/ValorantAccountWebsite.png",
+    img:"https://jcbaldomero.github.io/JcPorfolio/images/Projects/Websites/ValorantAccountWebsite.png",
     description:"Websites I developed using tools like HTML5,CSS3,SASS and JavaScript",
     link:"https://jcbaldomero.github.io/JcPorfolio/frontEnd.html"
   },
   {
     title:"Wordpress",
-    img:"../images/Projects/Websites/BelisonWebsite.png",
+    img:"https://jcbaldomero.github.io/JcPorfolio/images/Projects/Websites/BelisonWebsite.png",
     description:"Websites I developed using Wordpress and Elementor page builder",
     link:"https://jcbaldomero.github.io/JcPorfolio/wordpress.html"
   },
   {
     title:"Certificates",
-    img:"../images/Projects/certificates/ResponsiveWebdesign.png",
+    img:"https://jcbaldomero.github.io/JcPorfolio/images/Projects/certificates/ResponsiveWebdesign.png",
     description:"Certificates from learning Front-end Web development and Graphic design through Coursera and FreeCodeCamp",
     link:"https://jcbaldomero.github.io/JcPorfolio/Certificate.html"
   }
