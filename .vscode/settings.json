@@ -1,14 +1,13 @@
 {
-    "cSpell.words": [
-        "canva",
-        "elementor",
-        "nextbtn",
-        "prevbtn",
-        "remj",
-        "sdfsd",
-        "Webdesign"
-    ],
-    "cSpell.ignoreWords": [
-        "ebold"
-    ]
+  "cSpell.words": [
+    "canva",
+    "Coursera",
+    "elementor",
+    "nextbtn",
+    "prevbtn",
+    "remj",
+    "sdfsd",
+    "Webdesign"
+  ],
+  "cSpell.ignoreWords": ["ebold"]
 }

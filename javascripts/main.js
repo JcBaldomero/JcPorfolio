@@ -104,25 +104,25 @@ const projects = [
   {
     title:"Graphic design",
     img:"../images/SocialMedia/Breakfast.png",
-    description:"My works with graphic design using canva and premiere pro",
+    description:"Graphic design projects using Canva and Premiere pro",
     link:"https://jcbaldomero.github.io/JcPorfolio/Design.html"
   },
   {
     title:"Front-end Development",
     img:"../images/Projects/Websites/ValorantAccountWebsite.png",
-    description:"Websites i developed using tools like HTML5,CSS3,SASS and JavaScript",
+    description:"Websites I developed using tools like HTML5,CSS3,SASS and JavaScript",
     link:"https://jcbaldomero.github.io/JcPorfolio/frontEnd.html"
   },
   {
     title:"Wordpress",
     img:"../images/Projects/Websites/BelisonWebsite.png",
-    description:"Websites I developed using wordpress and elementor page builder",
+    description:"Websites I developed using Wordpress and Elementor page builder",
     link:"https://jcbaldomero.github.io/JcPorfolio/wordpress.html"
   },
   {
     title:"Certificates",
     img:"../images/Projects/certificates/ResponsiveWebdesign.png",
-    description:"My works with graphic design using canva and premiere pro",
+    description:"Certificates from learning Front-end Web development and Graphic design through Coursera and FreeCodeCamp",
     link:"https://jcbaldomero.github.io/JcPorfolio/Certificate.html"
   }
 ];
