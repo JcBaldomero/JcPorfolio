@@ -105,25 +105,29 @@ const projects = [
     title:"Graphic design",
     img:"https://jcbaldomero.github.io/JcPorfolio/images/SocialMedia/Breakfast.png",
     description:"Graphic design projects using Canva and Premiere pro",
-    link:"https://jcbaldomero.github.io/JcPorfolio/Design.html"
+    link:"https://jcbaldomero.github.io/JcPorfolio/Design.html",
+    linkName:"Graphic Design"
   },
   {
     title:"Front-end Development",
     img:"https://jcbaldomero.github.io/JcPorfolio/images/Projects/Websites/ValorantAccountWebsite.png",
     description:"Websites I developed using tools like HTML5,CSS3,SASS and JavaScript",
-    link:"https://jcbaldomero.github.io/JcPorfolio/frontEnd.html"
+    link:"https://jcbaldomero.github.io/JcPorfolio/frontEnd.html",
+    linkName:"Front-End Development"
   },
   {
     title:"Wordpress",
     img:"https://jcbaldomero.github.io/JcPorfolio/images/Projects/Websites/BelisonWebsite.png",
     description:"Websites I developed using Wordpress and Elementor page builder",
-    link:"https://jcbaldomero.github.io/JcPorfolio/wordpress.html"
+    link:"https://jcbaldomero.github.io/JcPorfolio/wordpress.html",
+    linkName:"Wordpress"
   },
   {
     title:"Certificates",
     img:"https://jcbaldomero.github.io/JcPorfolio/images/Projects/certificates/ResponsiveWebdesign.png",
     description:"Certificates from learning Front-end Web development and Graphic design through Coursera and FreeCodeCamp",
-    link:"https://jcbaldomero.github.io/JcPorfolio/Certificate.html"
+    link:"https://jcbaldomero.github.io/JcPorfolio/Certificate.html",
+    linkName:"Certificates"
   }
 ];
    
@@ -133,6 +137,7 @@ const img = document.getElementById("banner-img");
 const title = document.getElementById("title");
 const text = document.getElementById("text");
 const link = document.getElementById("link");
+const linkName = document.getElementById("linkName");
 
 const prevBtn = document.querySelector(".prevbtn")
 const nextBtn = document.querySelector(".nextbtn")
@@ -153,7 +158,8 @@ function showProjects(){
   img.src = value.img;
   title.textContent = value.title;
   text.textContent = value.description;
-  link.href = value.link    
+  link.href = value.link   
+  linkName.textContent =value.linkName; 
 }
 
 // buttons funtion

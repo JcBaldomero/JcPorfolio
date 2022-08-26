@@ -62,7 +62,7 @@ nav {
       width: 85%;
       height: 100vh;
       padding: 1rem 1rem 0rem 4rem;
-      @include flexBox(flex-start, center, column);
+      @include flexBox(center, center, column);
       position: absolute;
       top: 0%;
       right: 100%;

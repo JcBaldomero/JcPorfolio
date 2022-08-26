@@ -126,7 +126,7 @@ nav .navlink-container a:hover i {
     height: 100vh;
     padding: 1rem 1rem 0rem 4rem;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     position: absolute;
@@ -397,6 +397,7 @@ button {
 .intro-container .intro-right svg,
 .intro-container .show-on-scroll svg {
   width: 100%;
+  filter: drop-shadow(3px 3px 20px rgba(0, 0, 0, 0.459));
 }
 
 .intro-container .is-visible {
@@ -416,8 +417,10 @@ button {
   max-width: 600px;
   height: 350px;
   background: url("./images/background/pexels-mikael-blomkvist-6476587.jpg") no-repeat;
-  background-size: contain;
+  background-size: 100%;
   position: relative;
+  border-radius: 6px;
+  box-shadow: -10px 6px 28px 3px rgba(0, 0, 0, 0.5), inset -10px 6px 28px 3px rgba(194, 191, 191, 0.534);
 }
 
 .about-container .about-banner #primaryBlob {
@@ -432,8 +435,8 @@ button {
 
 .about-container .about-banner #Dots {
   position: absolute;
-  top: 30%;
-  left: -25%;
+  top: 35%;
+  left: -15%;
   z-index: -2;
 }
 
@@ -441,11 +444,11 @@ button {
 .about-container .about-banner .show-on-scroll {
   background-color: #1a1a2e;
   padding: 1.5rem;
-  width: 45%;
+  width: 55%;
   position: absolute;
-  top: 90%;
+  top: 100%;
   opacity: 0;
-  right: -5%;
+  right: -30%;
   transform: translate(50%, -50%);
   transition: 0.6s ease-out;
 }
@@ -505,16 +508,6 @@ button {
   margin: 1rem 0rem;
 }
 
-.skills-container .skill-table .row img {
-  width: 105px;
-  margin: 2.5rem 0rem 3rem;
-  transition: 0.4s ease;
-}
-
-.skills-container .skill-table .row img:hover {
-  transform: scale(1.4);
-}
-
 .skills-container .skill-table .row ul {
   text-align: left;
   margin-top: 10px;
@@ -539,8 +532,9 @@ button {
   flex-direction: column;
   padding: 4rem 0rem;
   position: relative;
-  background: url("./images/background/pexels-mikael-blomkvist-6476587.jpg") no-repeat;
+  background: url("./images/background/pexels-mikael-blomkvist-6476587.jpg") no-repeat center top;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .project-container::before {
@@ -554,7 +548,7 @@ button {
 
 .project-container .project-description {
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 5rem;
   z-index: 5;
 }
 
@@ -579,27 +573,52 @@ button {
   padding: 2rem 1.5rem;
   z-index: 5;
   border-radius: 2%;
+  text-align: center;
+  object-fit: 100%;
 }
 
 .project-container .project-card img {
-  width: 55%;
-  margin: 1.5rem 0rem;
+  width: 45%;
+  margin: 1.5rem 0rem 0.5rem 0rem;
 }
 
 .project-container .project-card p {
   text-align: center;
   color: #4c4848;
-  letter-spacing: .3px;
   font-weight: 600;
-  margin: .5rem 0rem;
+  margin: 0rem 0rem .5rem 0rem;
 }
 
 .project-container .project-card a {
+  border: 1px solid #396fb1;
+  padding: 1rem 1.5rem;
+  margin-top: 1.2rem;
   color: #396fb1;
+  font-weight: 600;
+  position: relative;
+}
+
+.project-container .project-card a::before {
+  content: "";
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -18%;
+  left: 6%;
+  background-color: #396fb1;
+  opacity: .2;
+  transition: .2s linear;
 }
 
 .project-container .project-card a:hover {
-  color: #e9445f;
+  color: black;
+}
+
+.project-container .project-card a:hover::before {
+  opacity: .5;
+  top: 0%;
+  left: 0%;
 }
 
 .project-container .project-card .btn-container {
