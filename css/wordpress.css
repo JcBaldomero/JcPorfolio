@@ -1,11 +1,10 @@
-/** @format */
-/** @format */
+/** @format */ /** @format */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -25,16 +24,14 @@ main {
 }
 
 body {
-  -ms-overflow-style: none;
-  /* IE and Edge */
-  scrollbar-width: none;
-  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 h2 {
-  color: #396fb1;
+  color: hsl(213deg, 51%, 46%);
   font-weight: 800;
-  font-size: clamp(1rem, 4rem, 7rem);
+  font-size: 4rem;
   margin-bottom: 1rem;
 }
 
@@ -53,14 +50,13 @@ nav {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  background-color: #1a1a2e;
+  background-color: hsl(240deg, 28%, 14%);
   color: white;
   padding: 0.5rem;
   position: sticky;
   top: 0;
   z-index: 99;
 }
-
 nav .logo-container {
   flex: 1;
   padding-left: 60px;
@@ -69,15 +65,12 @@ nav .logo-container {
   align-items: center;
   flex-direction: row;
 }
-
 nav .logo-container img {
   height: 5rem;
 }
-
 nav .logo-container .navBtn {
   display: none;
 }
-
 nav .navlink-container {
   flex: 1;
   display: flex;
@@ -85,23 +78,19 @@ nav .navlink-container {
   align-items: center;
   flex-direction: row;
 }
-
 nav .navlink-container a {
   margin: 0rem 0.5rem;
   font-size: 1.3rem;
   color: white;
-  transition: .3s ease;
+  transition: 0.3s linear;
 }
-
 nav .navlink-container a:hover {
-  color: #396fb1;
+  color: hsl(213deg, 51%, 46%);
   transition: 0.3s ease;
 }
-
 nav .navlink-container a i {
   opacity: 0;
 }
-
 nav .navlink-container a:hover i {
   opacity: 1;
 }
@@ -134,11 +123,11 @@ nav .navlink-container a:hover i {
     right: 100%;
     transition: 1s cubic-bezier(0.43, 0.92, 0.41, 0.64);
     background-color: white;
-    transition: .3s ease;
+    transition: 0.3s linear;
   }
   nav .navlink-container a {
     margin: 1rem 0rem;
-    color: #396fb1;
+    color: hsl(213deg, 51%, 46%);
   }
   nav .navlink-container a i {
     opacity: 1;
@@ -148,13 +137,12 @@ nav .navlink-container a:hover i {
     box-shadow: 1px 1px 62px 1000px rgba(26, 25, 25, 0.527), 1px 1px 2px rgba(0, 0, 0, 0.253);
   }
 }
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -174,16 +162,14 @@ main {
 }
 
 body {
-  -ms-overflow-style: none;
-  /* IE and Edge */
-  scrollbar-width: none;
-  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 h2 {
-  color: #396fb1;
+  color: hsl(213deg, 51%, 46%);
   font-weight: 800;
-  font-size: clamp(1rem, 4rem, 7rem);
+  font-size: 4rem;
   margin-bottom: 1rem;
 }
 
@@ -205,7 +191,6 @@ button {
   border-radius: 10px;
   box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02), 6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028), 12.5px 12.5px 10px rgba(0, 0, 0, 0.035), 22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042), 41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05), 100px 100px 80px rgba(0, 0, 0, 0.07);
 }
-
 .slider .slide {
   position: absolute;
   width: 100%;
@@ -226,7 +211,6 @@ button {
     opacity: 1;
   }
 }
-
 @keyframes fade2 {
   0% {
     opacity: 0;
@@ -241,7 +225,6 @@ button {
     opacity: 0;
   }
 }
-
 @keyframes fade3 {
   0% {
     opacity: 0;
@@ -256,7 +239,6 @@ button {
     opacity: 0;
   }
 }
-
 @keyframes fadein {
   0% {
     opacity: 1;
@@ -273,7 +255,6 @@ button {
     transform: scale(1.2);
   }
 }
-
 @keyframes fadein2 {
   0% {
     opacity: 0;
@@ -289,7 +270,6 @@ button {
     opacity: 0;
   }
 }
-
 @keyframes fadein3 {
   0% {
     opacity: 0;
@@ -305,7 +285,6 @@ button {
     opacity: 0;
   }
 }
-
 body {
   max-width: 1920px;
   margin: 0 auto;
@@ -319,14 +298,12 @@ body {
   align-items: center;
   flex-direction: row;
 }
-
 .wordpress-container .wordpress-content {
   width: 65%;
   height: 75%;
-  background-color: #396fb1;
+  background-color: hsl(213deg, 51%, 46%);
   position: relative;
 }
-
 .wordpress-container .wordpress-content img {
   width: 90%;
   height: 75%;
@@ -338,7 +315,6 @@ body {
   transform: translateY(-50%);
   box-shadow: 4px 1px 8px rgba(0, 0, 0, 0.486);
 }
-
 .wordpress-container .wordpress-title-container {
   display: flex;
   justify-content: space-between;
@@ -349,43 +325,41 @@ body {
   position: relative;
   padding-right: 2rem;
 }
-
 .wordpress-container .wordpress-title-container .project-title {
   width: 100%;
   height: 15%;
 }
-
 .wordpress-container .wordpress-title-container .project-title h2 {
-  font-size: clamp(1rem, 2rem, 3rem);
-  color: #1a1a2e;
+  font-size: 2rem;
+  color: hsl(240deg, 28%, 14%);
   margin-left: 1rem;
 }
-
 .wordpress-container .wordpress-title-container .wordpress-title {
   align-self: flex-end;
   width: 100%;
   height: 100%;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
   transform: rotate(-90deg);
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
   flex-direction: column;
 }
-
 .wordpress-container .wordpress-title-container .wordpress-title h2 {
   color: rgba(128, 128, 128, 0.308);
   margin-left: 1rem;
 }
-
 .wordpress-container .wordpress-title-container .wordpress-title .block {
   width: 45%;
   height: 1rem;
-  background-color: #396fb1;
+  background-color: hsl(213deg, 51%, 46%);
 }
 
 footer {
   width: 100%;
-  background-color: #e9445f;
+  background-color: hsl(350deg, 79%, 59%);
   padding: 1rem 0rem;
   display: flex;
   justify-content: center;
@@ -436,13 +410,16 @@ footer {
     height: auto;
   }
   .wordpress-container .wordpress-title-container .project-title h2 {
-    font-size: clamp(1rem, 2rem, 3rem);
+    font-size: 2rem;
     margin-left: 1rem;
   }
   .wordpress-container .wordpress-title-container .wordpress-title {
     align-self: unset;
     width: auto;
     height: auto;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
     transform: rotate(0deg);
     display: flex;
     justify-content: center;
@@ -452,11 +429,11 @@ footer {
   .wordpress-container .wordpress-title-container .wordpress-title h2 {
     color: rgba(0, 0, 0, 0.308);
     margin-left: 0rem;
-    font-size: clamp(1rem, 3.5rem, 5rem);
+    font-size: 3.5rem;
   }
   .wordpress-container .wordpress-title-container .wordpress-title .block {
     width: 45%;
     height: 1rem;
-    background-color: #396fb1;
+    background-color: hsl(213deg, 51%, 46%);
   }
 }
