@@ -192,119 +192,91 @@
 }
 
 
-.project-container{
-  height: auto;
-  min-height: 100vh;
-  @include flexBox(center, center, column);
-  padding: 4rem 0rem;
-  position: relative;
-  background: url('./images/background/pexels-mikael-blomkvist-6476587.jpg')
-  no-repeat center top;
-  background-size: cover;
-  background-attachment: fixed;
-  &::before{
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  background-color: rgba(0, 0, 0, 0.356);
-  }
-  .project-description{
+
+.projects-container{
+  width: 100%; 
+  color: white;
+  @include flexBox(center,center,column);
+  margin: 7rem 0rem 0rem 0rem;
+  padding: 10rem 0rem;
+  background-color: $primary;
+  // title
+  .project-title{
     text-align: center;
-    margin-bottom: 5rem;
-    z-index: 5;
-    h2{
-      color: $pink;
-      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.589);
-    }
-    h3{
+  }
+
+  // buttons
+  .project-btns{
+    width: 100%;
+    @include flexBox(center,center,row);
+    padding: 2rem 0rem;
+    gap: 1rem;
+  .project-btn{
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    margin: 15px;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: $pink;
+    background: transparent;
+    transition: ease-out 0.5s;
+    border: 2px solid $pink;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 $pink;
+    &:hover{
       color: white;
-      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.589);
-
+      box-shadow: inset 0 -100px 0 0 $pink;
+    }
+    &:active{
+      transform: scale(0.9);
     }
   }
-  .project-card{
-    width:55%;
-    max-width: 1020px;
-    background-color: white;
-    @include flexBox(center, center, column);
-    padding: 2rem 1.5rem;
-    z-index: 5;
-    border-radius: 2%;
-    text-align: center;
-    object-fit: 100%;
-
+  }
+  // items
+  .projects-item-container{
+    max-width: 1980px;
+    width: 90%;
+    margin-top: 5rem;
+    @include grid(repeat(3, 1fr), repeat(auto, 300px), 2rem);
+    
+  .project-item{
+    @include flexBox(center,flex-start,column);
+    gap: 1.5rem ;
+    align-self: center;
     img{
-      width: 45%; 
-      margin: 1.5rem 0rem 0.5rem 0rem;
+      width: 100%; height: 100%;
+      object-fit: contain;
     }
-    p{
-      text-align: center;
-      color: $greytext;
-      font-weight: $sbold;
-      margin: 0rem 0rem .5rem 0rem;
+    video{
+      width: 100%;
     }
-    a{
-      border: 1px solid $hover;
-      padding: 1rem 1.5rem;
-      margin-top: 1.2rem;
-      color: $hover;
-      font-weight: $sbold;
-      position: relative;
-      &::before{
-        content: "";
-        z-index: -1;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: -18%;
-        left: 6%;
-        background-color: $hover;
-        opacity: .2;
-        transition: .2s linear;
-      }
-      &:hover{
-      color: black;
-        &::before{
-          opacity: .5;
-          top: 0%;
-          left: 0%;
-        }
-       }
-     
-    }
-    .btn-container{
-      margin-top: 1rem;
-      button{
-        margin: 0rem 1.5rem;
-        color: $pink;
-        border: none;
-        background-color: transparent;
-        padding: .5rem;
-        transition: .3s linear ;
-      i{
-        font-size: 1.5rem;
-      }
-      &:hover{
-        color: $hover;
-      }
-      }
-    }
+  .item-info{
+   a{
+    color: white;
+  &:hover{
+    text-decoration: underline;
+  }
+  }
+   }
+  }
   }
 }
+
 
 // Contact section
 .contact-container {
   width: 100%;
-  height: 100vh;
+  height: auto;
+  padding: 3rem 0rem;
   @include flexBox(center, center, column);
-  background-color: $primary;
   h2 {
     font-size: clamp(2.5rem, 4rem, 5vw);
   }
   p {
-    color: $pink;
+    color: white;
   }
   .contactLottie{
     margin-top: 2rem;

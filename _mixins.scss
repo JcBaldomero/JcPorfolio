@@ -8,6 +8,23 @@
     transition: .3s linear;
 }
 
+@mixin grid($columns,$rows,$gap) {
+  display: grid;
+  grid-template-columns: $columns;
+  grid-template-rows: $rows;
+  gap: $gap;
+}
+
+
+
+
+
+
+
+
+
+
+
 // Variables
 // colors
 $primary: hsl(240, 28%, 14%);

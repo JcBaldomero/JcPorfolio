@@ -41,7 +41,7 @@ panels.forEach(panel => panel.addEventListener('transitionend', toggleShow));
 
 // Typewriter Function
 var typed = new Typed(".typing",{
-  strings: ["Front-end Developer","Video Editor"," Graphic Designer"],
+  strings: ["Front-End Developer","Video Editor"," Graphic Designer"],
   typeSpeed: 120,
   bacSpeed: 11,
   loop: true
@@ -100,83 +100,83 @@ var typed = new Typed(".typing",{
 
 
 // local projects data
-const projects = [
-  {
-    title:"Graphic design",
-    img:"https://jcbaldomero.github.io/JcPorfolio/images/SocialMedia/Breakfast.png",
-    description:"Graphic design projects using Canva and Premiere pro",
-    link:"https://jcbaldomero.github.io/JcPorfolio/Design.html",
-    linkName:"Graphic Design"
-  },
-  {
-    title:"Front-end Development",
-    img:"https://jcbaldomero.github.io/JcPorfolio/images/Projects/Websites/ValorantAccountWebsite.png",
-    description:"Websites I developed using tools like HTML5,CSS3,SASS and JavaScript",
-    link:"https://jcbaldomero.github.io/JcPorfolio/frontEnd.html",
-    linkName:"Front-End Development"
-  },
-  {
-    title:"Wordpress",
-    img:"https://jcbaldomero.github.io/JcPorfolio/images/Projects/Websites/BelisonWebsite.png",
-    description:"Websites I developed using Wordpress and Elementor page builder",
-    link:"https://jcbaldomero.github.io/JcPorfolio/wordpress.html",
-    linkName:"Wordpress"
-  },
-  {
-    title:"Certificates",
-    img:"https://jcbaldomero.github.io/JcPorfolio/images/Projects/certificates/ResponsiveWebdesign.png",
-    description:"Certificates from learning Front-end Web development and Graphic design through Coursera and FreeCodeCamp",
-    link:"https://jcbaldomero.github.io/JcPorfolio/Certificate.html",
-    linkName:"Certificates"
-  }
-];
+// const projects = [
+//   {
+//     title:"Graphic design",
+//     img:"https://jcbaldomero.github.io/JcPorfolio/images/SocialMedia/Breakfast.png",
+//     description:"Graphic design projects using Canva and Premiere pro",
+//     link:"https://jcbaldomero.github.io/JcPorfolio/Design.html",
+//     linkName:"Graphic Design"
+//   },
+//   {
+//     title:"Front-end Development",
+//     img:"https://jcbaldomero.github.io/JcPorfolio/images/Projects/Websites/ValorantAccountWebsite.png",
+//     description:"Websites I developed using tools like HTML5,CSS3,SASS and JavaScript",
+//     link:"https://jcbaldomero.github.io/JcPorfolio/frontEnd.html",
+//     linkName:"Front-End Development"
+//   },
+//   {
+//     title:"Wordpress",
+//     img:"https://jcbaldomero.github.io/JcPorfolio/images/Projects/Websites/BelisonWebsite.png",
+//     description:"Websites I developed using Wordpress and Elementor page builder",
+//     link:"https://jcbaldomero.github.io/JcPorfolio/wordpress.html",
+//     linkName:"Wordpress"
+//   },
+//   {
+//     title:"Certificates",
+//     img:"https://jcbaldomero.github.io/JcPorfolio/images/Projects/certificates/ResponsiveWebdesign.png",
+//     description:"Certificates from learning Front-end Web development and Graphic design through Coursera and FreeCodeCamp",
+//     link:"https://jcbaldomero.github.io/JcPorfolio/Certificate.html",
+//     linkName:"Certificates"
+//   }
+// ];
    
 
-// Projects functions
-const img = document.getElementById("banner-img");
-const title = document.getElementById("title");
-const text = document.getElementById("text");
-const link = document.getElementById("link");
-const linkName = document.getElementById("linkName");
+// // Projects functions
+// const img = document.getElementById("banner-img");
+// const title = document.getElementById("title");
+// const text = document.getElementById("text");
+// const link = document.getElementById("link");
+// const linkName = document.getElementById("linkName");
 
-const prevBtn = document.querySelector(".prevbtn")
-const nextBtn = document.querySelector(".nextbtn")
+// const prevBtn = document.querySelector(".prevbtn")
+// const nextBtn = document.querySelector(".nextbtn")
 
-// starting value
-let currentItem = 0;
-
-
-
-// load initial value
-window.addEventListener("DOMContentLoaded", function(){
-  showProjects()
-})
+// // starting value
+// let currentItem = 0;
 
 
-function showProjects(){
-  const value = projects[currentItem]
-  img.src = value.img;
-  title.textContent = value.title;
-  text.textContent = value.description;
-  link.href = value.link   
-  linkName.textContent =value.linkName; 
-}
 
-// buttons funtion
-
-nextBtn.addEventListener('click', function(){
-  currentItem++;
-  if(currentItem > projects.length -1){
-      currentItem = 0;
-  }
-  showProjects();
-})
+// // load initial value
+// window.addEventListener("DOMContentLoaded", function(){
+//   showProjects()
+// })
 
 
-prevBtn.addEventListener('click', function(){
-  currentItem--;
-  if(currentItem < 0){
-      currentItem = projects.length -1;
-  }
-  showProjects();
-})
+// function showProjects(){
+//   const value = projects[currentItem]
+//   img.src = value.img;
+//   title.textContent = value.title;
+//   text.textContent = value.description;
+//   link.href = value.link   
+//   linkName.textContent =value.linkName; 
+// }
+
+// // buttons funtion
+
+// nextBtn.addEventListener('click', function(){
+//   currentItem++;
+//   if(currentItem > projects.length -1){
+//       currentItem = 0;
+//   }
+//   showProjects();
+// })
+
+
+// prevBtn.addEventListener('click', function(){
+//   currentItem--;
+//   if(currentItem < 0){
+//       currentItem = projects.length -1;
+//   }
+//   showProjects();
+// })
