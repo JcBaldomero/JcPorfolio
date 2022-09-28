@@ -566,9 +566,6 @@ button {
 .contact-container h2 {
   font-size: clamp(2.5rem, 4rem, 5vw);
 }
-.contact-container p {
-  color: white;
-}
 .contact-container .contactLottie {
   margin-top: 2rem;
   cursor: pointer;
