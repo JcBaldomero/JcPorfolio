@@ -29,7 +29,7 @@ body {
 }
 
 h2 {
-  color: hsl(213deg, 51%, 46%);
+  color: hsl(213, 51%, 46%);
   font-weight: 800;
   font-size: 4rem;
   margin-bottom: 1rem;
@@ -50,7 +50,7 @@ nav {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  background-color: hsl(240deg, 28%, 14%);
+  background-color: hsl(240, 28%, 14%);
   color: white;
   padding: 0.5rem;
   position: sticky;
@@ -85,7 +85,7 @@ nav .navlink-container a {
   transition: 0.3s linear;
 }
 nav .navlink-container a:hover {
-  color: hsl(213deg, 51%, 46%);
+  color: hsl(213, 51%, 46%);
   transition: 0.3s ease;
 }
 nav .navlink-container a i {
@@ -127,7 +127,7 @@ nav .navlink-container a:hover i {
   }
   nav .navlink-container a {
     margin: 1rem 0rem;
-    color: hsl(213deg, 51%, 46%);
+    color: hsl(213, 51%, 46%);
   }
   nav .navlink-container a i {
     opacity: 1;
@@ -167,7 +167,7 @@ body {
 }
 
 h2 {
-  color: hsl(213deg, 51%, 46%);
+  color: hsl(213, 51%, 46%);
   font-weight: 800;
   font-size: 4rem;
   margin-bottom: 1rem;
@@ -297,7 +297,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  background-color: hsl(213deg, 51%, 46%);
+  background-color: hsl(213, 51%, 46%);
   padding: 5rem 0rem;
 }
 .certificate-container::before {
@@ -309,7 +309,7 @@ body {
   z-index: 1;
 }
 .certificate-container .certificate-content {
-  background-color: hsl(240deg, 28%, 14%);
+  background-color: hsl(240, 28%, 14%);
   width: 40%;
   height: 100vh;
   padding: 3rem 0rem;
@@ -320,7 +320,7 @@ body {
   font-size: 2rem;
   color: white;
   letter-spacing: 0.3rem;
-  background-color: hsl(0deg, 19%, 41%);
+  background-color: hsl(0, 19%, 41%);
   padding: 2rem;
   position: absolute;
   right: -30%;
@@ -347,7 +347,7 @@ body {
 
 footer {
   width: 100%;
-  background-color: hsl(350deg, 79%, 59%);
+  background-color: hsl(350, 79%, 59%);
   padding: 1rem 0rem;
   display: flex;
   justify-content: center;
