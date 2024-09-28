@@ -46,7 +46,7 @@ const project = [
       title: "Belison Tourism Website",
       category: "Wordpress",
       img: "https://i.postimg.cc/GhpGcVvq/Belison-Website.png",
-      anchor: "/PortfolioWebsites/BelisonWebsite/index.html",
+      anchor: "https://jcbaldomero.github.io/Belison-Tourism-Website/",
     },
     {
       id: 8,
