@@ -39,7 +39,7 @@ const project = [
       title: "keyboard Enthusiast",
       category: "Front-End",
       img: "https://i.postimg.cc/X7DFXL83/Keyboard-Website.png",
-      anchor: "/PortfolioWebsites/kebweb/index.html",
+      anchor: "https://jcbaldomero.github.io/Keyboard-Enthusiast/",
     },
     {
       id: 7,
