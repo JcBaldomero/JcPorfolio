@@ -32,7 +32,7 @@ const project = [
       title: "Valorant Website",
       category: "Front-End",
       img: "https://i.postimg.cc/CM7bpSnR/Valorant-Account-Website.png",
-      anchor: "/PortfolioWebsites/ThirdWeb/index.html",
+      anchor: "https://jcbaldomero.github.io/valorant-website/",
     },
     {
       id: 6,
